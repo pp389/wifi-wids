@@ -7,6 +7,7 @@ from src.detectors.deauth_detector import DeauthDetector
 from src.detectors.detection_engine import DetectionEngine
 from src.detectors.disassoc_detector import DisassocDetector
 from src.detectors.beacon_flood_detector import BeaconFloodDetector
+from src.detectors.probe_flood_detector import ProbeFloodDetector
 from src.filters.frame_filter import FrameFilter
 from src.output.alert_printer import AlertPrinter
 from src.output.console_printer import ConsolePrinter
@@ -95,6 +96,12 @@ def build_detection_engine(args):
             beacon_count_threshold=args.beacon_count_threshold,
             unique_bssid_threshold=args.beacon_unique_bssid_threshold,
             unique_ssid_threshold=args.beacon_unique_ssid_threshold,
+        ),
+        ProbeFloodDetector(
+            window_seconds=args.probe_window,
+            probe_count_threshold=args.probe_count_threshold,
+            per_source_threshold=args.probe_per_source_threshold,
+            unique_ssid_per_source_threshold=args.probe_unique_ssid_per_source_threshold,
         ),
     ]
 
@@ -211,6 +218,33 @@ def parse_args():
         type=int,
         default=20,
         help="Próg liczby unikalnych SSID w oknie czasowym dla Beacon Flood",
+    )
+        parser.add_argument(
+        "--probe-window",
+        type=int,
+        default=10,
+        help="Okno czasowe detekcji Probe Flood w sekundach",
+    )
+    
+    parser.add_argument(
+        "--probe-count-threshold",
+        type=int,
+        default=100,
+        help="Globalny próg liczby ramek probe request w oknie czasowym",
+    )
+
+    parser.add_argument(
+        "--probe-per-source-threshold",
+        type=int,
+        default=50,
+        help="Próg liczby probe request z jednego źródła w oknie czasowym",
+    )
+
+    parser.add_argument(
+        "--probe-unique-ssid-per-source-threshold",
+        type=int,
+        default=20,
+        help="Próg liczby unikalnych SSID z jednego źródła w oknie czasowym",
     )
 
     return parser.parse_args()
