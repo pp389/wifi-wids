@@ -8,6 +8,7 @@ from src.detectors.detection_engine import DetectionEngine
 from src.detectors.disassoc_detector import DisassocDetector
 from src.detectors.beacon_flood_detector import BeaconFloodDetector
 from src.detectors.probe_flood_detector import ProbeFloodDetector
+from src.detectors.evil_twin_detector import EvilTwinDetector
 from src.filters.frame_filter import FrameFilter
 from src.output.alert_printer import AlertPrinter
 from src.output.console_printer import ConsolePrinter
@@ -102,6 +103,12 @@ def build_detection_engine(args):
             probe_count_threshold=args.probe_count_threshold,
             per_source_threshold=args.probe_per_source_threshold,
             unique_ssid_per_source_threshold=args.probe_unique_ssid_per_source_threshold,
+        ),
+        EvilTwinDetector(
+            min_bssid_per_ssid=args.evil_twin_min_bssid,
+            rssi_delta_threshold=args.evil_twin_rssi_delta,
+            channel_change_enabled=not args.evil_twin_ignore_channel_change,
+            alert_cooldown_seconds=args.evil_twin_cooldown,
         ),
     ]
 
@@ -245,6 +252,32 @@ def parse_args():
         type=int,
         default=20,
         help="Próg liczby unikalnych SSID z jednego źródła w oknie czasowym",
+    )
+    parser.add_argument(
+        "--evil-twin-min-bssid",
+        type=int,
+        default=2,
+        help="Minimalna liczba różnych BSSID dla tego samego SSID",
+    )
+
+    parser.add_argument(
+        "--evil-twin-rssi-delta",
+        type=int,
+        default=25,
+        help="Próg różnicy średniego RSSI między BSSID tego samego SSID",
+    )
+
+    parser.add_argument(
+        "--evil-twin-ignore-channel-change",
+        action="store_true",
+        help="Ignoruj różne kanały dla tego samego SSID przy detekcji Evil Twin",
+    )
+
+    parser.add_argument(
+        "--evil-twin-cooldown",
+        type=int,
+        default=30,
+        help="Minimalny odstęp między alertami Evil Twin dla tego samego SSID",
     )
 
     return parser.parse_args()
