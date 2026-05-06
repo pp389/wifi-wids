@@ -6,6 +6,7 @@ from src.capture.pcap_reader import PcapFileReader
 from src.detectors.deauth_detector import DeauthDetector
 from src.detectors.detection_engine import DetectionEngine
 from src.detectors.disassoc_detector import DisassocDetector
+from src.detectors.beacon_flood_detector import BeaconFloodDetector
 from src.filters.frame_filter import FrameFilter
 from src.output.alert_printer import AlertPrinter
 from src.output.console_printer import ConsolePrinter
@@ -88,6 +89,12 @@ def build_detection_engine(args):
         DisassocDetector(
             window_seconds=args.detection_window,
             threshold=args.disassoc_threshold,
+        ),
+        BeaconFloodDetector(
+            window_seconds=args.beacon_window,
+            beacon_count_threshold=args.beacon_count_threshold,
+            unique_bssid_threshold=args.beacon_unique_bssid_threshold,
+            unique_ssid_threshold=args.beacon_unique_ssid_threshold,
         ),
     ]
 
@@ -176,6 +183,34 @@ def parse_args():
         type=int,
         default=20,
         help="Próg liczby ramek disassociation w oknie czasowym",
+    )
+    
+    parser.add_argument(
+        "--beacon-window",
+        type=int,
+        default=10,
+        help="Okno czasowe detekcji Beacon Flood w sekundach",
+    )
+
+    parser.add_argument(
+        "--beacon-count-threshold",
+        type=int,
+        default=100,
+        help="Próg liczby ramek beacon w oknie czasowym",
+    )
+
+    parser.add_argument(
+        "--beacon-unique-bssid-threshold",
+        type=int,
+        default=30,
+        help="Próg liczby unikalnych BSSID w oknie czasowym dla Beacon Flood",
+    )
+
+    parser.add_argument(
+        "--beacon-unique-ssid-threshold",
+        type=int,
+        default=20,
+        help="Próg liczby unikalnych SSID w oknie czasowym dla Beacon Flood",
     )
 
     return parser.parse_args()
