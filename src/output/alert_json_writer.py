@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 from pathlib import Path
 
 from src.models.alert import Alert
@@ -13,7 +14,9 @@ class AlertJsonWriter:
 
     def write(self, alert: Alert) -> None:
         record = {
+            "alert_id": alert.alert_id,
             "timestamp": alert.timestamp,
+            "timestamp_iso": datetime.fromtimestamp(alert.timestamp).isoformat(),
             "attack_type": alert.attack_type,
             "severity": alert.severity,
             "message": alert.message,

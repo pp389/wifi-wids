@@ -9,7 +9,7 @@ class AlertPrinter:
 
         print()
         print("!" * 80)
-        print(f"[ALERT] {alert.attack_type}")
+        print(f"[ALERT] {alert.alert_id or 'UNKNOWN'} | {alert.attack_type}")
         print(f"severity: {alert.severity}")
         print(f"time: {readable_time}")
         print(f"message: {alert.message}")

@@ -8,3 +8,4 @@ class Alert:
     severity: str
     message: str
     evidence: dict
+    alert_id: str | None = None

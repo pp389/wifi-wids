@@ -17,10 +17,14 @@ from src.output.alert_json_writer import AlertJsonWriter
 from src.stats.alert_stats import AlertStats
 from src.parser.frame_parser import FrameParser
 from src.stats.frame_stats import FrameStats
+from src.output.pcap_writer import PcapFileWriter
 
 
 def main():
     args = parse_args()
+    
+    if args.pcap and args.pcap_output:
+        raise ValueError("--pcap-output jest przeznaczony dla trybu live, nie offline PCAP")
 
     frame_parser = FrameParser()
     printer = ConsolePrinter()
@@ -38,10 +42,14 @@ def main():
 
     csv_writer = CsvWriter(args.csv) if args.csv else None
     alert_json_writer = AlertJsonWriter(args.alerts_json) if args.alerts_json else None
+    pcap_writer = PcapFileWriter(args.pcap_output) if args.pcap_output else None
 
     detection_engine = build_detection_engine(args) if args.detect else None
 
     def handle_packet(packet):
+        if pcap_writer:
+            pcap_writer.write(packet)
+    
         event = frame_parser.parse(packet)
 
         if event is None:
@@ -52,7 +60,7 @@ def main():
         if csv_writer:
             csv_writer.write(event)
 
-        if frame_filter.matches(event) and not args.summary:
+        if frame_filter.matches(event) and not args.summary and not args.quiet:
             printer.print_event(event)
 
         if detection_engine:
@@ -86,6 +94,9 @@ def main():
 
         if alert_json_writer:
             alert_json_writer.close()
+            
+        if pcap_writer:
+            pcap_writer.close()
 
         sys.exit(0)
 
@@ -297,6 +308,16 @@ def parse_args():
     parser.add_argument(
         "--alerts-json",
         help="Ścieżka do pliku JSONL z alertami, np. data/logs/alerts.jsonl",
+    )
+    parser.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Nie wypisuj pojedynczych ramek; pokazuj tylko alerty i podsumowania",
+    )
+
+    parser.add_argument(
+        "--pcap-output",
+        help="Ścieżka do zapisu przechwyconych ramek PCAP, np. data/pcaps/live_capture.pcap",
     )
 
     return parser.parse_args()
