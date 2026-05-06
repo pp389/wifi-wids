@@ -13,6 +13,8 @@ from src.filters.frame_filter import FrameFilter
 from src.output.alert_printer import AlertPrinter
 from src.output.console_printer import ConsolePrinter
 from src.output.csv_writer import CsvWriter
+from src.output.alert_json_writer import AlertJsonWriter
+from src.stats.alert_stats import AlertStats
 from src.parser.frame_parser import FrameParser
 from src.stats.frame_stats import FrameStats
 
@@ -32,7 +34,10 @@ def main():
     )
 
     stats = FrameStats(interval_seconds=args.stats_interval)
+    alert_stats = AlertStats()
+
     csv_writer = CsvWriter(args.csv) if args.csv else None
+    alert_json_writer = AlertJsonWriter(args.alerts_json) if args.alerts_json else None
 
     detection_engine = build_detection_engine(args) if args.detect else None
 
@@ -54,7 +59,11 @@ def main():
             alerts = detection_engine.process(event)
 
             for alert in alerts:
+                alert_stats.update(alert)
                 alert_printer.print_alert(alert)
+
+                if alert_json_writer:
+                    alert_json_writer.write(alert)
 
         if args.summary and stats.should_report():
             print(stats.report())
@@ -69,8 +78,14 @@ def main():
         if args.summary:
             print(stats.report())
 
+        if args.detect:
+            print(alert_stats.report())
+
         if csv_writer:
             csv_writer.close()
+
+        if alert_json_writer:
+            alert_json_writer.close()
 
         sys.exit(0)
 
@@ -278,6 +293,10 @@ def parse_args():
         type=int,
         default=30,
         help="Minimalny odstęp między alertami Evil Twin dla tego samego SSID",
+    )
+    parser.add_argument(
+        "--alerts-json",
+        help="Ścieżka do pliku JSONL z alertami, np. data/logs/alerts.jsonl",
     )
 
     return parser.parse_args()
