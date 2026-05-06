@@ -5,8 +5,8 @@ from src.models.alert import Alert
 from src.models.frame_event import FrameEvent
 
 
-class DeauthDetector(BaseDetector):
-    def __init__(self, window_seconds: int = 5, threshold: int = 25):
+class DisassocDetector(BaseDetector):
+    def __init__(self, window_seconds: int = 5, threshold: int = 20):
         self.window_seconds = window_seconds
         self.threshold = threshold
         self.events_by_source = defaultdict(deque)
@@ -14,7 +14,7 @@ class DeauthDetector(BaseDetector):
         self.alert_cooldown_seconds = window_seconds
 
     def process(self, event: FrameEvent) -> list[Alert]:
-        if event.frame_subtype != "deauthentication":
+        if event.frame_subtype != "disassociation":
             return []
 
         source = event.source_mac or "unknown"
@@ -39,11 +39,11 @@ class DeauthDetector(BaseDetector):
         return [
             Alert(
                 timestamp=now,
-                attack_type="DEAUTH_FLOOD",
+                attack_type="DISASSOC_FLOOD",
                 severity=self._severity(len(window)),
                 message=(
-                    f"Wykryto możliwy atak Deauthentication Flood: "
-                    f"{len(window)} ramek deauthentication z adresu {source} "
+                    f"Wykryto możliwy atak Disassociation Flood: "
+                    f"{len(window)} ramek disassociation z adresu {source} "
                     f"w oknie {self.window_seconds}s."
                 ),
                 evidence={

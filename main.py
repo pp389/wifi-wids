@@ -3,10 +3,14 @@ import sys
 
 from src.capture.live_capture import LiveCapture
 from src.capture.pcap_reader import PcapFileReader
-from src.parser.frame_parser import FrameParser
+from src.detectors.deauth_detector import DeauthDetector
+from src.detectors.detection_engine import DetectionEngine
+from src.detectors.disassoc_detector import DisassocDetector
+from src.filters.frame_filter import FrameFilter
+from src.output.alert_printer import AlertPrinter
 from src.output.console_printer import ConsolePrinter
 from src.output.csv_writer import CsvWriter
-from src.filters.frame_filter import FrameFilter
+from src.parser.frame_parser import FrameParser
 from src.stats.frame_stats import FrameStats
 
 
@@ -15,6 +19,7 @@ def main():
 
     frame_parser = FrameParser()
     printer = ConsolePrinter()
+    alert_printer = AlertPrinter()
 
     frame_filter = FrameFilter(
         frame_type=args.type,
@@ -25,6 +30,8 @@ def main():
 
     stats = FrameStats(interval_seconds=args.stats_interval)
     csv_writer = CsvWriter(args.csv) if args.csv else None
+
+    detection_engine = build_detection_engine(args) if args.detect else None
 
     def handle_packet(packet):
         event = frame_parser.parse(packet)
@@ -39,6 +46,12 @@ def main():
 
         if frame_filter.matches(event) and not args.summary:
             printer.print_event(event)
+
+        if detection_engine:
+            alerts = detection_engine.process(event)
+
+            for alert in alerts:
+                alert_printer.print_alert(alert)
 
         if args.summary and stats.should_report():
             print(stats.report())
@@ -66,9 +79,24 @@ def build_capture_source(args):
     return LiveCapture(interface=args.interface)
 
 
+def build_detection_engine(args):
+    detectors = [
+        DeauthDetector(
+            window_seconds=args.detection_window,
+            threshold=args.deauth_threshold,
+        ),
+        DisassocDetector(
+            window_seconds=args.detection_window,
+            threshold=args.disassoc_threshold,
+        ),
+    ]
+
+    return DetectionEngine(detectors)
+
+
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Klasyfikator i obserwator ramek WiFi 802.11"
+        description="Klasyfikator, obserwator i detektor ramek WiFi 802.11"
     )
 
     source_group = parser.add_mutually_exclusive_group(required=True)
@@ -121,6 +149,33 @@ def parse_args():
     parser.add_argument(
         "--csv",
         help="Ścieżka do pliku CSV, np. data/logs/capture.csv",
+    )
+
+    parser.add_argument(
+        "--detect",
+        action="store_true",
+        help="Włącz moduły detekcji heurystycznej",
+    )
+
+    parser.add_argument(
+        "--detection-window",
+        type=int,
+        default=5,
+        help="Okno czasowe detekcji w sekundach",
+    )
+
+    parser.add_argument(
+        "--deauth-threshold",
+        type=int,
+        default=25,
+        help="Próg liczby ramek deauthentication w oknie czasowym",
+    )
+
+    parser.add_argument(
+        "--disassoc-threshold",
+        type=int,
+        default=20,
+        help="Próg liczby ramek disassociation w oknie czasowym",
     )
 
     return parser.parse_args()
