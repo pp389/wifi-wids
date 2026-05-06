@@ -219,7 +219,7 @@ def parse_args():
         default=20,
         help="Próg liczby unikalnych SSID w oknie czasowym dla Beacon Flood",
     )
-        parser.add_argument(
+    parser.add_argument(
         "--probe-window",
         type=int,
         default=10,
