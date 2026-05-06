@@ -2,6 +2,7 @@ import argparse
 import sys
 
 from src.capture.live_capture import LiveCapture
+from src.capture.pcap_reader import PcapFileReader
 from src.parser.frame_parser import FrameParser
 from src.output.console_printer import ConsolePrinter
 from src.output.csv_writer import CsvWriter
@@ -23,7 +24,6 @@ def main():
     )
 
     stats = FrameStats(interval_seconds=args.stats_interval)
-
     csv_writer = CsvWriter(args.csv) if args.csv else None
 
     def handle_packet(packet):
@@ -43,13 +43,13 @@ def main():
         if args.summary and stats.should_report():
             print(stats.report())
 
-    capture = LiveCapture(interface=args.interface)
+    source = build_capture_source(args)
 
     try:
-        capture.start(handle_packet)
+        source.start(handle_packet)
     except KeyboardInterrupt:
         print("\nStopping capture...")
-
+    finally:
         if args.summary:
             print(stats.report())
 
@@ -59,16 +59,29 @@ def main():
         sys.exit(0)
 
 
+def build_capture_source(args):
+    if args.pcap:
+        return PcapFileReader(args.pcap)
+
+    return LiveCapture(interface=args.interface)
+
+
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Klasyfikator i obserwator ramek WiFi 802.11"
     )
 
-    parser.add_argument(
+    source_group = parser.add_mutually_exclusive_group(required=True)
+
+    source_group.add_argument(
         "-i",
         "--interface",
-        required=True,
         help="Interfejs WiFi w trybie monitor, np. wlan0mon",
+    )
+
+    source_group.add_argument(
+        "--pcap",
+        help="Ścieżka do pliku PCAP/PCAPNG do analizy offline",
     )
 
     parser.add_argument(
