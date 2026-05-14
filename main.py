@@ -9,6 +9,7 @@ from src.detectors.disassoc_detector import DisassocDetector
 from src.detectors.beacon_flood_detector import BeaconFloodDetector
 from src.detectors.probe_flood_detector import ProbeFloodDetector
 from src.detectors.evil_twin_detector import EvilTwinDetector
+from src.detectors.rts_cts_flood_detector import RtsCtsFloodDetector
 from src.filters.frame_filter import FrameFilter
 from src.output.alert_printer import AlertPrinter
 from src.output.console_printer import ConsolePrinter
@@ -135,6 +136,13 @@ def build_detection_engine(args):
             rssi_delta_threshold=args.evil_twin_rssi_delta,
             channel_change_enabled=not args.evil_twin_ignore_channel_change,
             alert_cooldown_seconds=args.evil_twin_cooldown,
+        ),
+        RtsCtsFloodDetector(
+            window_seconds=args.rts_cts_window,
+            rts_count_threshold=args.rts_count_threshold,
+            cts_count_threshold=args.cts_count_threshold,
+            combined_count_threshold=args.rts_cts_combined_threshold,
+            rts_per_source_threshold=args.rts_per_source_threshold,
         ),
     ]
 
@@ -318,6 +326,41 @@ def parse_args():
     parser.add_argument(
         "--pcap-output",
         help="Ścieżka do zapisu przechwyconych ramek PCAP, np. data/pcaps/live_capture.pcap",
+    )
+
+    parser.add_argument(
+        "--rts-cts-window",
+        type=int,
+        default=5,
+        help="Okno czasowe detekcji RTS/CTS Flood w sekundach",
+    )
+
+    parser.add_argument(
+        "--rts-count-threshold",
+        type=int,
+        default=100,
+        help="Próg liczby ramek RTS w oknie czasowym",
+    )
+
+    parser.add_argument(
+        "--cts-count-threshold",
+        type=int,
+        default=100,
+        help="Próg liczby ramek CTS w oknie czasowym",
+    )
+
+    parser.add_argument(
+        "--rts-cts-combined-threshold",
+        type=int,
+        default=150,
+        help="Próg łącznej liczby ramek RTS i CTS w oknie czasowym",
+    )
+
+    parser.add_argument(
+        "--rts-per-source-threshold",
+        type=int,
+        default=50,
+        help="Próg liczby ramek RTS z jednego źródła w oknie czasowym",
     )
 
     return parser.parse_args()
