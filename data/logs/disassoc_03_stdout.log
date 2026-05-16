@@ -1,0 +1,1518 @@
+
+================================================================================
+STATISTICS after 10.0s
+--------------------------------------------------------------------------------
+total frames: 132
+
+by frame type:
+  management: 88
+  control: 28
+  data: 16
+
+by frame subtype:
+  beacon: 84
+  ack: 23
+  null_data: 8
+  data: 6
+  probe_request: 3
+  rts: 2
+  cts: 2
+  qos_data: 2
+  block_ack: 1
+  probe_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 6
+================================================================================
+
+================================================================================
+STATISTICS after 20.1s
+--------------------------------------------------------------------------------
+total frames: 398
+
+by frame type:
+  management: 178
+  control: 131
+  data: 89
+
+by frame subtype:
+  beacon: 173
+  ack: 80
+  qos_data: 41
+  null_data: 25
+  data: 23
+  rts: 18
+  cts: 17
+  block_ack: 16
+  probe_request: 3
+  probe_response: 1
+  action: 1
+
+unique SSIDs: 2
+unique BSSIDs: 6
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:53:15.272792
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 30.1s
+--------------------------------------------------------------------------------
+total frames: 576
+
+by frame type:
+  management: 287
+  control: 177
+  data: 112
+
+by frame subtype:
+  beacon: 282
+  ack: 123
+  qos_data: 45
+  data: 36
+  null_data: 31
+  rts: 19
+  cts: 19
+  block_ack: 16
+  probe_request: 3
+  probe_response: 1
+  action: 1
+
+unique SSIDs: 2
+unique BSSIDs: 7
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:53:25.281302
+message: Wykryto możliwy atak Beacon Flood: 119 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 119, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 40.2s
+--------------------------------------------------------------------------------
+total frames: 717
+
+by frame type:
+  management: 408
+  control: 193
+  data: 116
+
+by frame subtype:
+  beacon: 396
+  ack: 139
+  qos_data: 45
+  data: 37
+  null_data: 34
+  rts: 19
+  cts: 19
+  block_ack: 16
+  probe_response: 6
+  probe_request: 5
+  action: 1
+
+unique SSIDs: 2
+unique BSSIDs: 7
+================================================================================
+
+================================================================================
+STATISTICS after 50.2s
+--------------------------------------------------------------------------------
+total frames: 844
+
+by frame type:
+  management: 495
+  control: 221
+  data: 128
+
+by frame subtype:
+  beacon: 479
+  ack: 164
+  qos_data: 46
+  null_data: 42
+  data: 39
+  rts: 20
+  cts: 20
+  block_ack: 17
+  probe_response: 10
+  probe_request: 5
+  action: 1
+  qos_null: 1
+
+unique SSIDs: 2
+unique BSSIDs: 7
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000003 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:53:45.352460
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 60.2s
+--------------------------------------------------------------------------------
+total frames: 1003
+
+by frame type:
+  management: 597
+  control: 257
+  data: 149
+
+by frame subtype:
+  beacon: 579
+  ack: 200
+  null_data: 53
+  data: 47
+  qos_data: 46
+  rts: 20
+  cts: 20
+  block_ack: 17
+  probe_response: 12
+  probe_request: 5
+  qos_null: 3
+  action: 1
+
+unique SSIDs: 2
+unique BSSIDs: 8
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000004 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:53:56.004891
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 70.3s
+--------------------------------------------------------------------------------
+total frames: 1146
+
+by frame type:
+  management: 700
+  control: 281
+  data: 165
+
+by frame subtype:
+  beacon: 682
+  ack: 221
+  null_data: 65
+  data: 50
+  qos_data: 47
+  rts: 21
+  cts: 21
+  block_ack: 18
+  probe_response: 12
+  probe_request: 5
+  qos_null: 3
+  action: 1
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000005 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:54:06.858609
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 80.3s
+--------------------------------------------------------------------------------
+total frames: 1292
+
+by frame type:
+  management: 803
+  control: 307
+  data: 182
+
+by frame subtype:
+  beacon: 782
+  ack: 247
+  null_data: 79
+  data: 53
+  qos_data: 47
+  rts: 21
+  cts: 21
+  block_ack: 18
+  probe_response: 14
+  probe_request: 5
+  qos_null: 3
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+STATISTICS after 90.3s
+--------------------------------------------------------------------------------
+total frames: 1429
+
+by frame type:
+  management: 901
+  control: 335
+  data: 193
+
+by frame subtype:
+  beacon: 880
+  ack: 272
+  null_data: 85
+  data: 57
+  qos_data: 48
+  rts: 22
+  cts: 22
+  block_ack: 19
+  probe_response: 14
+  probe_request: 5
+  qos_null: 3
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000006 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:54:22.422549
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 100.4s
+--------------------------------------------------------------------------------
+total frames: 1552
+
+by frame type:
+  management: 992
+  control: 361
+  data: 199
+
+by frame subtype:
+  beacon: 971
+  ack: 296
+  null_data: 90
+  data: 58
+  qos_data: 48
+  cts: 24
+  rts: 22
+  block_ack: 19
+  probe_response: 14
+  probe_request: 5
+  qos_null: 3
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000007 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:54:32.560554
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 110.4s
+--------------------------------------------------------------------------------
+total frames: 1721
+
+by frame type:
+  management: 1110
+  control: 393
+  data: 218
+
+by frame subtype:
+  beacon: 1089
+  ack: 328
+  null_data: 101
+  data: 65
+  qos_data: 48
+  cts: 24
+  rts: 22
+  block_ack: 19
+  probe_response: 14
+  probe_request: 5
+  qos_null: 4
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000008 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:54:42.596113
+message: Wykryto możliwy atak Beacon Flood: 116 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 116, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 120.4s
+--------------------------------------------------------------------------------
+total frames: 1873
+
+by frame type:
+  management: 1217
+  control: 425
+  data: 231
+
+by frame subtype:
+  beacon: 1196
+  ack: 357
+  null_data: 104
+  data: 74
+  qos_data: 49
+  cts: 25
+  rts: 23
+  block_ack: 20
+  probe_response: 14
+  probe_request: 5
+  qos_null: 4
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 10
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000009 | DISASSOC_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:54:47.991935
+message: Wykryto możliwy atak Disassociation Flood: 20 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 20, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000010 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:54:53.041265
+message: Wykryto możliwy atak Disassociation Flood: 151 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 151, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 130.4s
+--------------------------------------------------------------------------------
+total frames: 2477
+
+by frame type:
+  management: 1680
+  control: 542
+  data: 255
+
+by frame subtype:
+  beacon: 1284
+  ack: 464
+  disassociation: 281
+  null_data: 117
+  data: 76
+  qos_data: 58
+  probe_response: 52
+  probe_request: 43
+  cts: 27
+  block_ack: 24
+  rts: 23
+  action: 10
+  qos_null: 4
+  authentication: 4
+  block_ack_request: 4
+  association_request: 2
+  association_response: 2
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000011 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:54:58.043172
+message: Wykryto możliwy atak Disassociation Flood: 137 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 137, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000012 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:03.095187
+message: Wykryto możliwy atak Disassociation Flood: 151 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 151, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 140.5s
+--------------------------------------------------------------------------------
+total frames: 3072
+
+by frame type:
+  management: 2150
+  control: 633
+  data: 289
+
+by frame subtype:
+  beacon: 1383
+  disassociation: 594
+  ack: 551
+  null_data: 133
+  probe_response: 78
+  data: 77
+  qos_data: 75
+  probe_request: 66
+  cts: 27
+  block_ack: 26
+  rts: 23
+  action: 13
+  authentication: 8
+  block_ack_request: 6
+  qos_null: 4
+  association_request: 3
+  association_response: 3
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000013 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:08.099193
+message: Wykryto możliwy atak Disassociation Flood: 151 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 151, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000014 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:55:10.095598
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000015 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:13.119194
+message: Wykryto możliwy atak Disassociation Flood: 151 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 151, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 150.5s
+--------------------------------------------------------------------------------
+total frames: 3671
+
+by frame type:
+  management: 2624
+  control: 730
+  data: 317
+
+by frame subtype:
+  beacon: 1466
+  disassociation: 888
+  ack: 642
+  null_data: 145
+  probe_response: 116
+  probe_request: 104
+  data: 86
+  qos_data: 82
+  block_ack: 29
+  cts: 28
+  rts: 23
+  action: 22
+  authentication: 14
+  block_ack_request: 8
+  association_request: 6
+  association_response: 6
+  qos_null: 4
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000016 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:18.147180
+message: Wykryto możliwy atak Disassociation Flood: 153 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 153, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000017 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:23.179254
+message: Wykryto możliwy atak Disassociation Flood: 148 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 148, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 160.5s
+--------------------------------------------------------------------------------
+total frames: 4245
+
+by frame type:
+  management: 3080
+  control: 818
+  data: 347
+
+by frame subtype:
+  beacon: 1550
+  disassociation: 1200
+  ack: 724
+  null_data: 167
+  probe_response: 135
+  probe_request: 129
+  qos_data: 89
+  data: 87
+  block_ack: 32
+  action: 30
+  cts: 28
+  rts: 23
+  authentication: 19
+  block_ack_request: 11
+  association_request: 8
+  association_response: 7
+  qos_null: 4
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000018 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:28.199173
+message: Wykryto możliwy atak Disassociation Flood: 149 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 149, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000019 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:33.227210
+message: Wykryto możliwy atak Disassociation Flood: 153 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 153, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 170.5s
+--------------------------------------------------------------------------------
+total frames: 4846
+
+by frame type:
+  management: 3541
+  control: 914
+  data: 391
+
+by frame subtype:
+  beacon: 1637
+  disassociation: 1493
+  ack: 814
+  null_data: 197
+  probe_response: 169
+  probe_request: 159
+  qos_data: 98
+  data: 91
+  action: 36
+  block_ack: 35
+  cts: 28
+  authentication: 24
+  rts: 23
+  block_ack_request: 14
+  association_request: 11
+  association_response: 10
+  qos_null: 5
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000020 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:38.243257
+message: Wykryto możliwy atak Disassociation Flood: 149 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 149, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000021 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T13:55:43.251310
+message: Wykryto możliwy atak Disassociation Flood: 151 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 151, 'threshold': 20, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 180.5s
+--------------------------------------------------------------------------------
+total frames: 5434
+
+by frame type:
+  management: 3958
+  control: 1017
+  data: 459
+
+by frame subtype:
+  disassociation: 1752
+  beacon: 1726
+  ack: 902
+  null_data: 235
+  probe_response: 199
+  probe_request: 186
+  qos_data: 119
+  data: 100
+  action: 40
+  block_ack: 37
+  rts: 31
+  cts: 31
+  authentication: 28
+  block_ack_request: 16
+  association_request: 13
+  association_response: 12
+  qos_null: 5
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 12
+================================================================================
+
+================================================================================
+STATISTICS after 190.6s
+--------------------------------------------------------------------------------
+total frames: 5713
+
+by frame type:
+  management: 4064
+  control: 1116
+  data: 533
+
+by frame subtype:
+  beacon: 1821
+  disassociation: 1752
+  ack: 947
+  null_data: 272
+  probe_response: 201
+  probe_request: 187
+  qos_data: 139
+  data: 117
+  block_ack: 53
+  rts: 50
+  cts: 48
+  action: 44
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 5
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 13
+================================================================================
+
+================================================================================
+STATISTICS after 200.6s
+--------------------------------------------------------------------------------
+total frames: 5921
+
+by frame type:
+  management: 4156
+  control: 1187
+  data: 578
+
+by frame subtype:
+  beacon: 1908
+  disassociation: 1752
+  ack: 977
+  null_data: 296
+  probe_response: 206
+  probe_request: 187
+  qos_data: 152
+  data: 125
+  block_ack: 67
+  rts: 63
+  cts: 62
+  action: 44
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 5
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 210.7s
+--------------------------------------------------------------------------------
+total frames: 6037
+
+by frame type:
+  management: 4231
+  control: 1212
+  data: 594
+
+by frame subtype:
+  beacon: 1983
+  disassociation: 1752
+  ack: 996
+  null_data: 307
+  probe_response: 206
+  probe_request: 187
+  qos_data: 153
+  data: 129
+  block_ack: 69
+  rts: 65
+  cts: 64
+  action: 44
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 5
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 220.7s
+--------------------------------------------------------------------------------
+total frames: 6175
+
+by frame type:
+  management: 4326
+  control: 1233
+  data: 616
+
+by frame subtype:
+  beacon: 2071
+  disassociation: 1752
+  ack: 1014
+  null_data: 326
+  probe_response: 209
+  probe_request: 191
+  qos_data: 154
+  data: 131
+  block_ack: 70
+  rts: 66
+  cts: 65
+  action: 44
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 5
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 230.8s
+--------------------------------------------------------------------------------
+total frames: 6369
+
+by frame type:
+  management: 4430
+  control: 1280
+  data: 659
+
+by frame subtype:
+  beacon: 2161
+  disassociation: 1752
+  ack: 1055
+  null_data: 352
+  probe_response: 218
+  probe_request: 196
+  qos_data: 156
+  data: 145
+  block_ack: 72
+  rts: 68
+  cts: 67
+  action: 44
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 6
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000022 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:56:47.119000
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 240.9s
+--------------------------------------------------------------------------------
+total frames: 6508
+
+by frame type:
+  management: 4533
+  control: 1295
+  data: 680
+
+by frame subtype:
+  beacon: 2264
+  disassociation: 1752
+  ack: 1070
+  null_data: 370
+  probe_response: 218
+  probe_request: 196
+  qos_data: 156
+  data: 148
+  block_ack: 72
+  rts: 68
+  cts: 67
+  action: 44
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 6
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 250.9s
+--------------------------------------------------------------------------------
+total frames: 6654
+
+by frame type:
+  management: 4614
+  control: 1319
+  data: 721
+
+by frame subtype:
+  beacon: 2345
+  disassociation: 1752
+  ack: 1091
+  null_data: 404
+  probe_response: 218
+  probe_request: 196
+  qos_data: 157
+  data: 154
+  block_ack: 73
+  rts: 69
+  cts: 68
+  action: 44
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 6
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 260.9s
+--------------------------------------------------------------------------------
+total frames: 6802
+
+by frame type:
+  management: 4697
+  control: 1349
+  data: 756
+
+by frame subtype:
+  beacon: 2428
+  disassociation: 1752
+  ack: 1112
+  null_data: 431
+  probe_response: 218
+  probe_request: 196
+  qos_data: 160
+  data: 159
+  block_ack: 76
+  rts: 72
+  cts: 71
+  action: 44
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 6
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 271.0s
+--------------------------------------------------------------------------------
+total frames: 6950
+
+by frame type:
+  management: 4789
+  control: 1375
+  data: 786
+
+by frame subtype:
+  beacon: 2510
+  disassociation: 1752
+  ack: 1138
+  null_data: 455
+  probe_response: 223
+  probe_request: 198
+  data: 165
+  qos_data: 160
+  block_ack: 76
+  rts: 72
+  cts: 71
+  action: 47
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 6
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 281.0s
+--------------------------------------------------------------------------------
+total frames: 7081
+
+by frame type:
+  management: 4884
+  control: 1393
+  data: 804
+
+by frame subtype:
+  beacon: 2601
+  disassociation: 1752
+  ack: 1156
+  null_data: 472
+  probe_response: 225
+  probe_request: 200
+  data: 166
+  qos_data: 160
+  block_ack: 76
+  rts: 72
+  cts: 71
+  action: 47
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 6
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 291.0s
+--------------------------------------------------------------------------------
+total frames: 7280
+
+by frame type:
+  management: 4970
+  control: 1464
+  data: 846
+
+by frame subtype:
+  beacon: 2687
+  disassociation: 1752
+  ack: 1178
+  null_data: 489
+  probe_response: 225
+  probe_request: 200
+  qos_data: 178
+  data: 172
+  block_ack: 92
+  rts: 88
+  cts: 88
+  action: 47
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 7
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 301.1s
+--------------------------------------------------------------------------------
+total frames: 7401
+
+by frame type:
+  management: 5054
+  control: 1480
+  data: 867
+
+by frame subtype:
+  beacon: 2771
+  disassociation: 1752
+  ack: 1194
+  null_data: 504
+  probe_response: 225
+  probe_request: 200
+  data: 178
+  qos_data: 178
+  block_ack: 92
+  rts: 88
+  cts: 88
+  action: 47
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 7
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 311.1s
+--------------------------------------------------------------------------------
+total frames: 7520
+
+by frame type:
+  management: 5121
+  control: 1504
+  data: 895
+
+by frame subtype:
+  beacon: 2838
+  disassociation: 1752
+  ack: 1212
+  null_data: 529
+  probe_response: 225
+  probe_request: 200
+  qos_data: 180
+  data: 179
+  block_ack: 94
+  rts: 90
+  cts: 90
+  action: 47
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 7
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 321.2s
+--------------------------------------------------------------------------------
+total frames: 7658
+
+by frame type:
+  management: 5215
+  control: 1532
+  data: 911
+
+by frame subtype:
+  beacon: 2932
+  disassociation: 1752
+  ack: 1232
+  null_data: 543
+  probe_response: 225
+  probe_request: 200
+  qos_data: 182
+  data: 179
+  block_ack: 96
+  rts: 93
+  cts: 93
+  action: 47
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 7
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 331.3s
+--------------------------------------------------------------------------------
+total frames: 7823
+
+by frame type:
+  management: 5316
+  control: 1572
+  data: 935
+
+by frame subtype:
+  beacon: 3020
+  disassociation: 1752
+  ack: 1269
+  null_data: 554
+  probe_response: 234
+  probe_request: 202
+  data: 187
+  qos_data: 187
+  block_ack: 97
+  rts: 94
+  cts: 94
+  action: 49
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 7
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 341.3s
+--------------------------------------------------------------------------------
+total frames: 7940
+
+by frame type:
+  management: 5402
+  control: 1595
+  data: 943
+
+by frame subtype:
+  beacon: 3106
+  disassociation: 1752
+  ack: 1292
+  null_data: 557
+  probe_response: 234
+  probe_request: 202
+  data: 191
+  qos_data: 188
+  block_ack: 97
+  rts: 94
+  cts: 94
+  action: 49
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 7
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 351.3s
+--------------------------------------------------------------------------------
+total frames: 8062
+
+by frame type:
+  management: 5496
+  control: 1616
+  data: 950
+
+by frame subtype:
+  beacon: 3196
+  disassociation: 1752
+  ack: 1313
+  null_data: 562
+  probe_response: 236
+  probe_request: 204
+  data: 191
+  qos_data: 188
+  block_ack: 97
+  rts: 94
+  cts: 94
+  action: 49
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 9
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 361.4s
+--------------------------------------------------------------------------------
+total frames: 8191
+
+by frame type:
+  management: 5579
+  control: 1647
+  data: 965
+
+by frame subtype:
+  beacon: 3279
+  disassociation: 1752
+  ack: 1344
+  null_data: 571
+  probe_response: 236
+  probe_request: 204
+  data: 193
+  qos_data: 192
+  block_ack: 97
+  rts: 94
+  cts: 94
+  action: 49
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 9
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000023 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T13:58:57.387437
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 371.5s
+--------------------------------------------------------------------------------
+total frames: 8350
+
+by frame type:
+  management: 5689
+  control: 1682
+  data: 979
+
+by frame subtype:
+  beacon: 3384
+  disassociation: 1752
+  ack: 1370
+  null_data: 574
+  probe_response: 238
+  probe_request: 207
+  data: 201
+  qos_data: 195
+  block_ack: 100
+  rts: 97
+  cts: 97
+  action: 49
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 9
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 381.6s
+--------------------------------------------------------------------------------
+total frames: 8477
+
+by frame type:
+  management: 5785
+  control: 1706
+  data: 986
+
+by frame subtype:
+  beacon: 3480
+  disassociation: 1752
+  ack: 1394
+  null_data: 580
+  probe_response: 238
+  probe_request: 207
+  data: 202
+  qos_data: 195
+  block_ack: 100
+  rts: 97
+  cts: 97
+  action: 49
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 9
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 391.6s
+--------------------------------------------------------------------------------
+total frames: 8599
+
+by frame type:
+  management: 5860
+  control: 1736
+  data: 1003
+
+by frame subtype:
+  beacon: 3554
+  disassociation: 1752
+  ack: 1422
+  null_data: 585
+  probe_response: 238
+  data: 214
+  probe_request: 207
+  qos_data: 195
+  block_ack: 100
+  cts: 99
+  rts: 97
+  action: 50
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 9
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
+
+================================================================================
+STATISTICS after 401.7s
+--------------------------------------------------------------------------------
+total frames: 8744
+
+by frame type:
+  management: 5953
+  control: 1775
+  data: 1016
+
+by frame subtype:
+  beacon: 3647
+  disassociation: 1752
+  ack: 1460
+  null_data: 594
+  probe_response: 238
+  data: 218
+  probe_request: 207
+  qos_data: 195
+  cts: 100
+  block_ack: 100
+  rts: 97
+  action: 50
+  authentication: 30
+  block_ack_request: 18
+  association_request: 14
+  association_response: 13
+  qos_null: 9
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 3
+unique BSSIDs: 14
+================================================================================
