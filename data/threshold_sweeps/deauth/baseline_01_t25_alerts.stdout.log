@@ -1,0 +1,169 @@
+
+================================================================================
+STATISTICS after 10.0s
+--------------------------------------------------------------------------------
+total frames: 449
+
+by frame type:
+  management: 260
+  control: 95
+  data: 94
+
+by frame subtype:
+  beacon: 250
+  ack: 89
+  null_data: 59
+  data: 30
+  probe_request: 6
+  qos_data: 5
+  probe_response: 2
+  action: 2
+  rts: 2
+  cts: 2
+  block_ack: 2
+
+unique SSIDs: 2
+unique BSSIDs: 6
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T14:48:22.068693
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['d8:d7:75:45:81:24', 'ac:84:c6:41:71:22']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 20.0s
+--------------------------------------------------------------------------------
+total frames: 1699
+
+by frame type:
+  management: 1047
+  data: 327
+  control: 325
+
+by frame subtype:
+  beacon: 1000
+  ack: 304
+  null_data: 236
+  data: 75
+  probe_response: 25
+  probe_request: 18
+  qos_data: 12
+  rts: 8
+  cts: 7
+  block_ack: 6
+  action: 4
+  qos_null: 4
+
+unique SSIDs: 4
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+STATISTICS after 30.1s
+--------------------------------------------------------------------------------
+total frames: 2882
+
+by frame type:
+  management: 1796
+  control: 554
+  data: 532
+
+by frame subtype:
+  beacon: 1714
+  ack: 509
+  null_data: 388
+  data: 120
+  probe_response: 43
+  probe_request: 30
+  qos_data: 20
+  rts: 17
+  cts: 16
+  block_ack: 12
+  action: 9
+  qos_null: 4
+
+unique SSIDs: 5
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+STATISTICS after 40.1s
+--------------------------------------------------------------------------------
+total frames: 3381
+
+by frame type:
+  management: 2100
+  control: 654
+  data: 627
+
+by frame subtype:
+  beacon: 1972
+  ack: 606
+  null_data: 459
+  data: 141
+  probe_response: 70
+  probe_request: 49
+  qos_data: 21
+  rts: 18
+  cts: 17
+  block_ack: 13
+  action: 9
+  qos_null: 6
+
+unique SSIDs: 5
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T14:50:47.481936
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['d8:d7:75:45:81:24', 'ac:84:c6:41:71:22']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 46.4s
+--------------------------------------------------------------------------------
+total frames: 4688
+
+by frame type:
+  management: 2853
+  control: 963
+  data: 872
+
+by frame subtype:
+  beacon: 2668
+  ack: 838
+  null_data: 613
+  data: 186
+  probe_response: 109
+  qos_data: 66
+  probe_request: 65
+  rts: 45
+  cts: 44
+  block_ack: 36
+  action: 11
+  qos_null: 7
+
+unique SSIDs: 5
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+DETECTION SUMMARY
+--------------------------------------------------------------------------------
+total alerts: 2
+
+by attack type:
+  BEACON_FLOOD: 2
+
+by severity:
+  MEDIUM: 2
+================================================================================

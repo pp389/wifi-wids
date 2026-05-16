@@ -1,0 +1,142 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T14:48:22.068693
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['d8:d7:75:45:81:24', 'ac:84:c6:41:71:22']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 10.0s
+--------------------------------------------------------------------------------
+total frames: 1955
+
+by frame type:
+  management: 1202
+  control: 377
+  data: 376
+
+by frame subtype:
+  beacon: 1149
+  ack: 347
+  null_data: 274
+  data: 83
+  probe_response: 27
+  probe_request: 20
+  qos_data: 15
+  rts: 11
+  cts: 10
+  block_ack: 9
+  action: 6
+  qos_null: 4
+
+unique SSIDs: 4
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+STATISTICS after 20.0s
+--------------------------------------------------------------------------------
+total frames: 2250
+
+by frame type:
+  management: 1388
+  data: 433
+  control: 429
+
+by frame subtype:
+  beacon: 1332
+  ack: 399
+  null_data: 321
+  data: 93
+  probe_response: 28
+  probe_request: 22
+  qos_data: 15
+  rts: 11
+  cts: 10
+  block_ack: 9
+  action: 6
+  qos_null: 4
+
+unique SSIDs: 4
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T14:50:47.481936
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['d8:d7:75:45:81:24', 'ac:84:c6:41:71:22']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 30.0s
+--------------------------------------------------------------------------------
+total frames: 4037
+
+by frame type:
+  management: 2420
+  control: 847
+  data: 770
+
+by frame subtype:
+  beacon: 2260
+  ack: 726
+  null_data: 528
+  data: 171
+  probe_response: 92
+  qos_data: 65
+  probe_request: 57
+  rts: 44
+  cts: 42
+  block_ack: 35
+  action: 11
+  qos_null: 6
+
+unique SSIDs: 5
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+STATISTICS after 33.5s
+--------------------------------------------------------------------------------
+total frames: 4688
+
+by frame type:
+  management: 2853
+  control: 963
+  data: 872
+
+by frame subtype:
+  beacon: 2668
+  ack: 838
+  null_data: 613
+  data: 186
+  probe_response: 109
+  qos_data: 66
+  probe_request: 65
+  rts: 45
+  cts: 44
+  block_ack: 36
+  action: 11
+  qos_null: 7
+
+unique SSIDs: 5
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+DETECTION SUMMARY
+--------------------------------------------------------------------------------
+total alerts: 2
+
+by attack type:
+  BEACON_FLOOD: 2
+
+by severity:
+  MEDIUM: 2
+================================================================================

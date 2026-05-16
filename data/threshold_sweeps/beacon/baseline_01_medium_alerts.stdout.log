@@ -1,0 +1,68 @@
+
+================================================================================
+STATISTICS after 10.0s
+--------------------------------------------------------------------------------
+total frames: 2733
+
+by frame type:
+  management: 1700
+  control: 525
+  data: 508
+
+by frame subtype:
+  beacon: 1625
+  ack: 486
+  null_data: 375
+  data: 111
+  probe_response: 42
+  probe_request: 27
+  qos_data: 18
+  rts: 15
+  cts: 14
+  block_ack: 10
+  action: 6
+  qos_null: 4
+
+unique SSIDs: 5
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+STATISTICS after 16.8s
+--------------------------------------------------------------------------------
+total frames: 4688
+
+by frame type:
+  management: 2853
+  control: 963
+  data: 872
+
+by frame subtype:
+  beacon: 2668
+  ack: 838
+  null_data: 613
+  data: 186
+  probe_response: 109
+  qos_data: 66
+  probe_request: 65
+  rts: 45
+  cts: 44
+  block_ack: 36
+  action: 11
+  qos_null: 7
+
+unique SSIDs: 5
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+DETECTION SUMMARY
+--------------------------------------------------------------------------------
+total alerts: 0
+
+by attack type:
+  none
+
+by severity:
+  none
+================================================================================

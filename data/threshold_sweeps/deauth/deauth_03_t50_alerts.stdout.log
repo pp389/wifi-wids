@@ -1,0 +1,390 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | DEAUTH_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:15:20.575266
+message: Wykryto możliwy atak Deauthentication Flood: 50 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 50, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | DEAUTH_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:15:20.577378
+message: Wykryto możliwy atak Deauthentication Flood: 50 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 50, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 10.0s
+--------------------------------------------------------------------------------
+total frames: 2765
+
+by frame type:
+  management: 1704
+  control: 611
+  data: 450
+
+by frame subtype:
+  beacon: 1075
+  ack: 581
+  deauthentication: 566
+  null_data: 280
+  data: 153
+  probe_response: 34
+  probe_request: 25
+  qos_data: 13
+  cts: 12
+  rts: 9
+  block_ack: 9
+  action: 4
+  qos_null: 4
+
+unique SSIDs: 2
+unique BSSIDs: 10
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000003 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:25.577902
+message: Wykryto możliwy atak Deauthentication Flood: 1100 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1100, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000004 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:25.580018
+message: Wykryto możliwy atak Deauthentication Flood: 1094 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1094, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000005 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:30.584142
+message: Wykryto możliwy atak Deauthentication Flood: 1133 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1133, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000006 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:30.587508
+message: Wykryto możliwy atak Deauthentication Flood: 1125 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1125, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000007 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:35.710500
+message: Wykryto możliwy atak Deauthentication Flood: 1086 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1086, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000008 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:35.712625
+message: Wykryto możliwy atak Deauthentication Flood: 1091 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1091, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000009 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:40.710980
+message: Wykryto możliwy atak Deauthentication Flood: 1043 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1043, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000010 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:40.713098
+message: Wykryto możliwy atak Deauthentication Flood: 1034 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1034, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 20.0s
+--------------------------------------------------------------------------------
+total frames: 16345
+
+by frame type:
+  management: 12359
+  control: 3461
+  data: 525
+
+by frame subtype:
+  deauthentication: 10862
+  ack: 3423
+  beacon: 1271
+  null_data: 325
+  data: 165
+  probe_response: 107
+  probe_request: 86
+  qos_data: 31
+  action: 14
+  block_ack: 13
+  cts: 12
+  authentication: 10
+  rts: 9
+  association_request: 5
+  qos_null: 4
+  association_response: 4
+  block_ack_request: 4
+
+unique SSIDs: 2
+unique BSSIDs: 10
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000011 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:45.714880
+message: Wykryto możliwy atak Deauthentication Flood: 1130 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1130, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000012 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:45.716991
+message: Wykryto możliwy atak Deauthentication Flood: 1143 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1143, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000013 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:50.714885
+message: Wykryto możliwy atak Deauthentication Flood: 1110 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1110, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000014 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:50.717381
+message: Wykryto możliwy atak Deauthentication Flood: 1118 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1118, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000015 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:55.898604
+message: Wykryto możliwy atak Deauthentication Flood: 1076 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1076, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000016 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:15:55.900755
+message: Wykryto możliwy atak Deauthentication Flood: 1079 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1079, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 30.0s
+--------------------------------------------------------------------------------
+total frames: 22755
+
+by frame type:
+  management: 17397
+  control: 4808
+  data: 550
+
+by frame subtype:
+  deauthentication: 15760
+  ack: 4770
+  beacon: 1357
+  null_data: 348
+  data: 167
+  probe_response: 130
+  probe_request: 107
+  qos_data: 31
+  action: 15
+  authentication: 15
+  block_ack: 13
+  cts: 12
+  rts: 9
+  association_request: 7
+  association_response: 6
+  qos_null: 4
+  block_ack_request: 4
+
+unique SSIDs: 2
+unique BSSIDs: 10
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000017 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:16:00.904093
+message: Wykryto możliwy atak Deauthentication Flood: 1097 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1097, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000018 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:16:00.906258
+message: Wykryto możliwy atak Deauthentication Flood: 1095 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1095, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000019 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:16:05.905905
+message: Wykryto możliwy atak Deauthentication Flood: 1124 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1124, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000020 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:16:05.908020
+message: Wykryto możliwy atak Deauthentication Flood: 1099 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1099, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000021 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:16:10.910779
+message: Wykryto możliwy atak Deauthentication Flood: 1080 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1080, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000022 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:16:10.912891
+message: Wykryto możliwy atak Deauthentication Flood: 1067 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1067, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000023 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:16:16.046690
+message: Wykryto możliwy atak Deauthentication Flood: 1078 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1078, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000024 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:16:16.048819
+message: Wykryto możliwy atak Deauthentication Flood: 1069 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1069, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 40.0s
+--------------------------------------------------------------------------------
+total frames: 36289
+
+by frame type:
+  management: 28063
+  control: 7593
+  data: 633
+
+by frame subtype:
+  deauthentication: 25942
+  ack: 7543
+  beacon: 1651
+  null_data: 407
+  probe_response: 203
+  probe_request: 184
+  data: 175
+  qos_data: 47
+  action: 35
+  authentication: 24
+  block_ack: 19
+  cts: 12
+  association_request: 12
+  association_response: 12
+  block_ack_request: 10
+  rts: 9
+  qos_null: 4
+
+unique SSIDs: 2
+unique BSSIDs: 10
+================================================================================
+
+================================================================================
+STATISTICS after 49.2s
+--------------------------------------------------------------------------------
+total frames: 38244
+
+by frame type:
+  management: 29110
+  control: 8098
+  data: 1036
+
+by frame subtype:
+  deauthentication: 25942
+  ack: 7905
+  beacon: 2643
+  null_data: 656
+  data: 269
+  probe_response: 232
+  probe_request: 202
+  qos_data: 103
+  block_ack: 67
+  cts: 58
+  rts: 56
+  action: 41
+  authentication: 24
+  association_request: 13
+  association_response: 13
+  block_ack_request: 12
+  qos_null: 8
+
+unique SSIDs: 2
+unique BSSIDs: 12
+================================================================================
+
+================================================================================
+DETECTION SUMMARY
+--------------------------------------------------------------------------------
+total alerts: 24
+
+by attack type:
+  DEAUTH_FLOOD: 24
+
+by severity:
+  CRITICAL: 22
+  MEDIUM: 2
+================================================================================

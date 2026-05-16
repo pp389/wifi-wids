@@ -1,0 +1,191 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | DISASSOC_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:20:39.408470
+message: Wykryto możliwy atak Disassociation Flood: 40 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 40, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:20:44.459266
+message: Wykryto możliwy atak Disassociation Flood: 161 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 161, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000003 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:20:49.487774
+message: Wykryto możliwy atak Disassociation Flood: 159 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 159, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000004 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:20:54.495833
+message: Wykryto możliwy atak Disassociation Flood: 159 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 159, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000005 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:20:59.559979
+message: Wykryto możliwy atak Disassociation Flood: 160 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 160, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000006 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:21:04.619674
+message: Wykryto możliwy atak Disassociation Flood: 161 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 161, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 10.0s
+--------------------------------------------------------------------------------
+total frames: 3625
+
+by frame type:
+  management: 2472
+  control: 698
+  data: 455
+
+by frame subtype:
+  beacon: 1279
+  disassociation: 932
+  ack: 600
+  null_data: 303
+  probe_response: 148
+  probe_request: 79
+  data: 77
+  qos_data: 70
+  cts: 38
+  rts: 29
+  block_ack: 29
+  authentication: 13
+  action: 12
+  qos_null: 5
+  association_response: 4
+  association_request: 3
+  block_ack_request: 2
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 2
+unique BSSIDs: 12
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000007 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:21:09.659288
+message: Wykryto możliwy atak Disassociation Flood: 159 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 159, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000008 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:21:14.715429
+message: Wykryto możliwy atak Disassociation Flood: 159 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 159, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000009 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:21:19.767493
+message: Wykryto możliwy atak Disassociation Flood: 162 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 162, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000010 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:21:24.803210
+message: Wykryto możliwy atak Disassociation Flood: 159 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 159, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000011 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:21:29.861381
+message: Wykryto możliwy atak Disassociation Flood: 161 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 161, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000012 | DISASSOC_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:21:34.899786
+message: Wykryto możliwy atak Disassociation Flood: 162 ramek disassociation z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 162, 'threshold': 40, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 17.0s
+--------------------------------------------------------------------------------
+total frames: 7842
+
+by frame type:
+  management: 5163
+  control: 1596
+  data: 1083
+
+by frame subtype:
+  beacon: 2614
+  disassociation: 1897
+  ack: 1284
+  null_data: 672
+  probe_response: 334
+  probe_request: 214
+  data: 172
+  qos_data: 155
+  rts: 120
+  cts: 92
+  block_ack: 87
+  qos_null: 84
+  action: 55
+  authentication: 25
+  block_ack_request: 13
+  association_request: 12
+  association_response: 10
+  reassociation_request: 1
+  reassociation_response: 1
+
+unique SSIDs: 7
+unique BSSIDs: 13
+================================================================================
+
+================================================================================
+DETECTION SUMMARY
+--------------------------------------------------------------------------------
+total alerts: 12
+
+by attack type:
+  DISASSOC_FLOOD: 12
+
+by severity:
+  CRITICAL: 11
+  MEDIUM: 1
+================================================================================

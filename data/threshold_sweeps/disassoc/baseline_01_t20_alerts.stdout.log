@@ -1,0 +1,58 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T14:48:22.068693
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['d8:d7:75:45:81:24', 'ac:84:c6:41:71:22']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T14:50:47.481936
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['FunBox2-8124', 'TP-LINK_7122'], 'sample_bssids': ['d8:d7:75:45:81:24', 'ac:84:c6:41:71:22']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 8.5s
+--------------------------------------------------------------------------------
+total frames: 4688
+
+by frame type:
+  management: 2853
+  control: 963
+  data: 872
+
+by frame subtype:
+  beacon: 2668
+  ack: 838
+  null_data: 613
+  data: 186
+  probe_response: 109
+  qos_data: 66
+  probe_request: 65
+  rts: 45
+  cts: 44
+  block_ack: 36
+  action: 11
+  qos_null: 7
+
+unique SSIDs: 5
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+DETECTION SUMMARY
+--------------------------------------------------------------------------------
+total alerts: 2
+
+by attack type:
+  BEACON_FLOOD: 2
+
+by severity:
+  MEDIUM: 2
+================================================================================

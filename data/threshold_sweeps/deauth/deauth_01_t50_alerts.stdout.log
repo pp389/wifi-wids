@@ -1,0 +1,1142 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:02:58.952448
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:03:08.988008
+message: Wykryto możliwy atak Beacon Flood: 112 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 112, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000003 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:03:19.025343
+message: Wykryto możliwy atak Beacon Flood: 112 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 112, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000004 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T15:03:31.665915
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 8e:8e:6f:93:93:5f w oknie 5s.
+evidence: {'source_mac': '8e:8e:6f:93:93:5f', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['70:0b:01:45:f0:90']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000005 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T15:03:32.680703
+message: Wykryto możliwy RTS/CTS Flood: 100 ramek RTS oraz 17 ramek CTS w oknie 5s.
+evidence: {'rts_count': 100, 'cts_count': 17, 'combined_count': 117, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate'], 'unique_source_count': 1, 'unique_destination_count': 1, 'sample_sources': ['8e:8e:6f:93:93:5f'], 'sample_destinations': ['70:0b:01:45:f0:90']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 10.0s
+--------------------------------------------------------------------------------
+total frames: 1901
+
+by frame type:
+  control: 1053
+  management: 536
+  data: 312
+
+by frame subtype:
+  beacon: 509
+  rts: 509
+  ack: 381
+  null_data: 162
+  qos_data: 129
+  block_ack: 82
+  block_ack_request: 57
+  cts: 24
+  data: 19
+  probe_response: 14
+  probe_request: 11
+  action: 2
+  qos_null: 2
+
+unique SSIDs: 4
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000006 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T15:03:38.425595
+message: Wykryto możliwy RTS/CTS Flood: 454 ramek RTS oraz 1 ramek CTS w oknie 5s.
+evidence: {'rts_count': 454, 'cts_count': 1, 'combined_count': 455, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 3, 'sample_sources': ['54:35:30:cf:ee:1e', '8e:8e:6f:93:93:5f'], 'sample_destinations': ['54:35:30:cf:ee:1e', '70:0b:01:45:f0:90', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000007 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T15:03:38.425595
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 453 ramek RTS z adresu 8e:8e:6f:93:93:5f w oknie 5s.
+evidence: {'source_mac': '8e:8e:6f:93:93:5f', 'rts_count': 453, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['70:0b:01:45:f0:90']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000008 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:03:41.611953
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 20.0s
+--------------------------------------------------------------------------------
+total frames: 2397
+
+by frame type:
+  control: 1355
+  management: 658
+  data: 384
+
+by frame subtype:
+  rts: 653
+  beacon: 618
+  ack: 505
+  null_data: 219
+  qos_data: 137
+  block_ack: 91
+  block_ack_request: 75
+  cts: 31
+  data: 26
+  probe_response: 25
+  probe_request: 13
+  action: 2
+  qos_null: 2
+
+unique SSIDs: 4
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000009 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:03:51.690448
+message: Wykryto możliwy atak Beacon Flood: 106 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 106, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000010 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:04:01.725984
+message: Wykryto możliwy atak Beacon Flood: 106 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 106, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 30.0s
+--------------------------------------------------------------------------------
+total frames: 2682
+
+by frame type:
+  control: 1394
+  management: 859
+  data: 429
+
+by frame subtype:
+  beacon: 816
+  rts: 653
+  ack: 543
+  null_data: 260
+  qos_data: 137
+  block_ack: 91
+  block_ack_request: 75
+  cts: 32
+  data: 30
+  probe_response: 26
+  probe_request: 15
+  action: 2
+  qos_null: 2
+
+unique SSIDs: 4
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000011 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:04:11.761683
+message: Wykryto możliwy atak Beacon Flood: 105 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 105, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000012 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T15:04:21.184506
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 8e:8e:6f:93:93:5f w oknie 5s.
+evidence: {'source_mac': '8e:8e:6f:93:93:5f', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['70:0b:01:45:f0:90']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000013 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T15:04:22.587698
+message: Wykryto możliwy RTS/CTS Flood: 98 ramek RTS oraz 52 ramek CTS w oknie 5s.
+evidence: {'rts_count': 98, 'cts_count': 52, 'combined_count': 150, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 3, 'sample_sources': ['54:35:30:cf:ee:1e', '8e:8e:6f:93:93:5f'], 'sample_destinations': ['54:35:30:cf:ee:1e', '70:0b:01:45:f0:90', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000014 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T15:04:25.772492
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['ae:c8:79:79:72:40']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 40.0s
+--------------------------------------------------------------------------------
+total frames: 4329
+
+by frame type:
+  control: 2585
+  management: 1104
+  data: 640
+
+by frame subtype:
+  rts: 1034
+  beacon: 1006
+  ack: 830
+  null_data: 390
+  block_ack: 365
+  cts: 189
+  qos_data: 176
+  block_ack_request: 167
+  data: 68
+  probe_response: 51
+  probe_request: 34
+  action: 10
+  qos_null: 6
+  authentication: 1
+  association_request: 1
+  association_response: 1
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000015 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T15:04:26.966247
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu ae:c8:79:79:72:40 w oknie 5s.
+evidence: {'source_mac': 'ae:c8:79:79:72:40', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000016 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T15:04:27.592001
+message: Wykryto możliwy RTS/CTS Flood: 562 ramek RTS oraz 204 ramek CTS w oknie 5s.
+evidence: {'rts_count': 562, 'cts_count': 204, 'combined_count': 766, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '8e:8e:6f:93:93:5f', 'ae:c8:79:79:72:40'], 'sample_destinations': ['70:0b:01:45:f0:90', 'ae:c8:79:79:72:40', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 50.0s
+--------------------------------------------------------------------------------
+total frames: 5986
+
+by frame type:
+  control: 4206
+  management: 1133
+  data: 647
+
+by frame subtype:
+  rts: 1561
+  block_ack: 1309
+  beacon: 1028
+  ack: 836
+  null_data: 395
+  cts: 333
+  qos_data: 176
+  block_ack_request: 167
+  data: 70
+  probe_response: 58
+  probe_request: 34
+  action: 10
+  qos_null: 6
+  authentication: 1
+  association_request: 1
+  association_response: 1
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000017 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T15:04:30.774542
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 668 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 668, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['ae:c8:79:79:72:40']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000018 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T15:04:32.660758
+message: Wykryto możliwy RTS/CTS Flood: 543 ramek RTS oraz 105 ramek CTS w oknie 5s.
+evidence: {'rts_count': 543, 'cts_count': 105, 'combined_count': 648, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', 'ae:c8:79:79:72:40'], 'sample_destinations': ['ae:c8:79:79:72:40', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000019 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T15:04:33.504605
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 65 ramek RTS z adresu ae:c8:79:79:72:40 w oknie 5s.
+evidence: {'source_mac': 'ae:c8:79:79:72:40', 'rts_count': 65, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 60.1s
+--------------------------------------------------------------------------------
+total frames: 7984
+
+by frame type:
+  control: 6134
+  management: 1174
+  data: 676
+
+by frame subtype:
+  block_ack: 2544
+  rts: 2020
+  beacon: 1069
+  ack: 865
+  cts: 538
+  null_data: 401
+  qos_data: 176
+  block_ack_request: 167
+  data: 82
+  probe_response: 58
+  probe_request: 34
+  qos_null: 17
+  action: 10
+  authentication: 1
+  association_request: 1
+  association_response: 1
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000020 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T15:04:35.898090
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 348 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 348, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['ae:c8:79:79:72:40']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000021 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T15:04:37.876751
+message: Wykryto możliwy RTS/CTS Flood: 343 ramek RTS oraz 288 ramek CTS w oknie 5s.
+evidence: {'rts_count': 343, 'cts_count': 288, 'combined_count': 631, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['8e:8e:6f:93:93:5f', 'ae:c8:79:79:72:40', 'd8:d7:75:45:81:24'], 'sample_destinations': ['d8:d7:75:45:81:24', '70:0b:01:45:f0:90', 'ae:c8:79:79:72:40']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000022 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T15:04:40.948760
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 118 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 118, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['ae:c8:79:79:72:40']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000023 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:04:41.765889
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000024 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T15:04:42.880010
+message: Wykryto możliwy RTS/CTS Flood: 157 ramek RTS oraz 175 ramek CTS w oknie 5s.
+evidence: {'rts_count': 157, 'cts_count': 175, 'combined_count': 332, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '8e:8e:6f:93:93:5f', 'ae:c8:79:79:72:40'], 'sample_destinations': ['70:0b:01:45:f0:90', 'ae:c8:79:79:72:40', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000025 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T15:04:43.930675
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 8e:8e:6f:93:93:5f w oknie 5s.
+evidence: {'source_mac': '8e:8e:6f:93:93:5f', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['70:0b:01:45:f0:90']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000026 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T15:04:45.951592
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 55 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 55, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['ae:c8:79:79:72:40']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000027 | DEAUTH_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:04:46.053940
+message: Wykryto możliwy atak Deauthentication Flood: 50 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 50, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000028 | DEAUTH_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:04:46.093439
+message: Wykryto możliwy atak Deauthentication Flood: 50 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 50, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 70.1s
+--------------------------------------------------------------------------------
+total frames: 11180
+
+by frame type:
+  control: 8603
+  management: 1686
+  data: 891
+
+by frame subtype:
+  block_ack: 3363
+  rts: 2761
+  beacon: 1198
+  ack: 1079
+  cts: 881
+  block_ack_request: 519
+  null_data: 512
+  deauthentication: 354
+  qos_data: 216
+  data: 85
+  qos_null: 78
+  probe_response: 73
+  probe_request: 48
+  action: 10
+  authentication: 1
+  association_request: 1
+  association_response: 1
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000029 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T15:04:48.000362
+message: Wykryto możliwy RTS/CTS Flood: 392 ramek RTS oraz 11 ramek CTS w oknie 5s.
+evidence: {'rts_count': 392, 'cts_count': 11, 'combined_count': 403, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '8e:8e:6f:93:93:5f', 'ae:c8:79:79:72:40'], 'sample_destinations': ['70:0b:01:45:f0:90', 'ae:c8:79:79:72:40', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000030 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T15:04:49.754657
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 245 ramek RTS z adresu 8e:8e:6f:93:93:5f w oknie 5s.
+evidence: {'source_mac': '8e:8e:6f:93:93:5f', 'rts_count': 245, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['70:0b:01:45:f0:90']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000031 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:04:51.057533
+message: Wykryto możliwy atak Deauthentication Flood: 772 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 772, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000032 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:04:51.094768
+message: Wykryto możliwy atak Deauthentication Flood: 757 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 757, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 80.1s
+--------------------------------------------------------------------------------
+total frames: 14727
+
+by frame type:
+  control: 9539
+  management: 4225
+  data: 963
+
+by frame subtype:
+  block_ack: 3378
+  rts: 2814
+  deauthentication: 2723
+  ack: 1782
+  beacon: 1244
+  cts: 881
+  block_ack_request: 684
+  null_data: 556
+  qos_data: 222
+  data: 107
+  probe_response: 103
+  action: 82
+  qos_null: 78
+  probe_request: 65
+  authentication: 4
+  association_request: 2
+  association_response: 2
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000033 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:04:56.059785
+message: Wykryto możliwy atak Deauthentication Flood: 1120 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1120, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000034 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:04:56.095680
+message: Wykryto możliwy atak Deauthentication Flood: 1109 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1109, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 90.1s
+--------------------------------------------------------------------------------
+total frames: 16246
+
+by frame type:
+  control: 9849
+  management: 5429
+  data: 968
+
+by frame subtype:
+  deauthentication: 3894
+  block_ack: 3378
+  rts: 2814
+  ack: 2092
+  beacon: 1269
+  cts: 881
+  block_ack_request: 684
+  null_data: 559
+  qos_data: 222
+  data: 109
+  probe_response: 106
+  action: 82
+  qos_null: 78
+  probe_request: 70
+  authentication: 4
+  association_request: 2
+  association_response: 2
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000035 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:01.064014
+message: Wykryto możliwy atak Deauthentication Flood: 1082 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1082, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000036 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:01.098964
+message: Wykryto możliwy atak Deauthentication Flood: 1078 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1078, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 100.1s
+--------------------------------------------------------------------------------
+total frames: 21662
+
+by frame type:
+  control: 11083
+  management: 9526
+  data: 1053
+
+by frame subtype:
+  deauthentication: 7832
+  block_ack: 3397
+  ack: 3284
+  rts: 2835
+  beacon: 1349
+  cts: 883
+  block_ack_request: 684
+  null_data: 633
+  qos_data: 229
+  probe_response: 152
+  data: 113
+  probe_request: 95
+  action: 82
+  qos_null: 78
+  authentication: 8
+  association_request: 4
+  association_response: 4
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000037 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:06.066584
+message: Wykryto możliwy atak Deauthentication Flood: 1046 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1046, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000038 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:06.260684
+message: Wykryto możliwy atak Deauthentication Flood: 1022 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1022, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 110.1s
+--------------------------------------------------------------------------------
+total frames: 22931
+
+by frame type:
+  control: 11374
+  management: 10487
+  data: 1070
+
+by frame subtype:
+  deauthentication: 8750
+  ack: 3560
+  block_ack: 3399
+  rts: 2843
+  beacon: 1368
+  cts: 883
+  block_ack_request: 689
+  null_data: 642
+  qos_data: 236
+  probe_response: 159
+  data: 114
+  probe_request: 103
+  action: 87
+  qos_null: 78
+  authentication: 10
+  association_request: 5
+  association_response: 5
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+================================================================================
+STATISTICS after 120.1s
+--------------------------------------------------------------------------------
+total frames: 23848
+
+by frame type:
+  control: 11588
+  management: 11185
+  data: 1075
+
+by frame subtype:
+  deauthentication: 9425
+  ack: 3774
+  block_ack: 3399
+  rts: 2843
+  beacon: 1383
+  cts: 883
+  block_ack_request: 689
+  null_data: 644
+  qos_data: 236
+  probe_response: 162
+  data: 117
+  probe_request: 108
+  action: 87
+  qos_null: 78
+  authentication: 10
+  association_request: 5
+  association_response: 5
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000039 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:11.214684
+message: Wykryto możliwy atak Deauthentication Flood: 1037 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1037, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000040 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:11.261369
+message: Wykryto możliwy atak Deauthentication Flood: 1057 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1057, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000041 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:16.219280
+message: Wykryto możliwy atak Deauthentication Flood: 1110 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1110, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000042 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:16.264156
+message: Wykryto możliwy atak Deauthentication Flood: 1105 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1105, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 130.1s
+--------------------------------------------------------------------------------
+total frames: 28253
+
+by frame type:
+  management: 14574
+  control: 12569
+  data: 1110
+
+by frame subtype:
+  deauthentication: 12723
+  ack: 4738
+  block_ack: 3400
+  rts: 2849
+  beacon: 1438
+  cts: 883
+  block_ack_request: 699
+  null_data: 671
+  qos_data: 237
+  probe_response: 172
+  data: 124
+  probe_request: 121
+  action: 92
+  qos_null: 78
+  authentication: 14
+  association_request: 7
+  association_response: 7
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000043 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:21.222826
+message: Wykryto możliwy atak Deauthentication Flood: 1091 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1091, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000044 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:21.272224
+message: Wykryto możliwy atak Deauthentication Flood: 1064 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1064, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000045 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:26.224676
+message: Wykryto możliwy atak Deauthentication Flood: 1059 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1059, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000046 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:26.274657
+message: Wykryto możliwy atak Deauthentication Flood: 1036 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1036, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 140.1s
+--------------------------------------------------------------------------------
+total frames: 33766
+
+by frame type:
+  management: 18861
+  control: 13735
+  data: 1170
+
+by frame subtype:
+  deauthentication: 16827
+  ack: 5849
+  block_ack: 3401
+  rts: 2849
+  beacon: 1521
+  cts: 883
+  block_ack_request: 753
+  null_data: 719
+  qos_data: 245
+  probe_response: 222
+  probe_request: 151
+  data: 128
+  action: 100
+  qos_null: 78
+  authentication: 20
+  association_request: 10
+  association_response: 10
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+================================================================================
+STATISTICS after 150.1s
+--------------------------------------------------------------------------------
+total frames: 35062
+
+by frame type:
+  management: 19808
+  control: 14038
+  data: 1216
+
+by frame subtype:
+  deauthentication: 17754
+  ack: 6079
+  block_ack: 3407
+  rts: 2849
+  beacon: 1540
+  cts: 883
+  block_ack_request: 820
+  null_data: 749
+  qos_data: 258
+  probe_response: 222
+  probe_request: 151
+  data: 131
+  action: 101
+  qos_null: 78
+  authentication: 20
+  association_request: 10
+  association_response: 10
+
+unique SSIDs: 6
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000047 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:31.237982
+message: Wykryto możliwy atak Deauthentication Flood: 964 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 964, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000048 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:31.278323
+message: Wykryto możliwy atak Deauthentication Flood: 952 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 952, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000049 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:36.238415
+message: Wykryto możliwy atak Deauthentication Flood: 1040 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 1040, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000050 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:36.436149
+message: Wykryto możliwy atak Deauthentication Flood: 1037 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 1037, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 160.1s
+--------------------------------------------------------------------------------
+total frames: 40033
+
+by frame type:
+  management: 23497
+  control: 15167
+  data: 1369
+
+by frame subtype:
+  deauthentication: 21306
+  ack: 7150
+  block_ack: 3414
+  rts: 2849
+  beacon: 1621
+  cts: 883
+  block_ack_request: 871
+  null_data: 781
+  qos_data: 296
+  probe_response: 243
+  data: 180
+  probe_request: 172
+  qos_null: 112
+  action: 107
+  authentication: 24
+  association_request: 12
+  association_response: 12
+
+unique SSIDs: 6
+unique BSSIDs: 14
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000051 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:41.393780
+message: Wykryto możliwy atak Deauthentication Flood: 953 ramek deauthentication z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'destination_mac': 'ff:ff:ff:ff:ff:ff', 'bssid': 'd8:d7:75:45:81:24', 'count': 953, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000052 | DEAUTH_FLOOD
+severity: CRITICAL
+time: 2026-05-16T15:05:41.438642
+message: Wykryto możliwy atak Deauthentication Flood: 951 ramek deauthentication z adresu ff:ff:ff:ff:ff:ff w oknie 5s.
+evidence: {'source_mac': 'ff:ff:ff:ff:ff:ff', 'destination_mac': 'd8:d7:75:45:81:24', 'bssid': 'd8:d7:75:45:81:24', 'count': 951, 'threshold': 50, 'window_seconds': 5}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 170.1s
+--------------------------------------------------------------------------------
+total frames: 44712
+
+by frame type:
+  management: 26911
+  control: 16241
+  data: 1560
+
+by frame subtype:
+  deauthentication: 24309
+  ack: 8083
+  block_ack: 3453
+  rts: 2889
+  beacon: 1936
+  cts: 920
+  block_ack_request: 896
+  null_data: 889
+  qos_data: 334
+  probe_response: 288
+  data: 224
+  probe_request: 202
+  action: 115
+  qos_null: 113
+  authentication: 30
+  association_request: 16
+  association_response: 15
+
+unique SSIDs: 7
+unique BSSIDs: 16
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000053 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:06:14.913697
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000054 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:06:33.641469
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 180.1s
+--------------------------------------------------------------------------------
+total frames: 45323
+
+by frame type:
+  management: 27276
+  control: 16374
+  data: 1673
+
+by frame subtype:
+  deauthentication: 24309
+  ack: 8200
+  block_ack: 3458
+  rts: 2895
+  beacon: 2273
+  null_data: 980
+  cts: 925
+  block_ack_request: 896
+  qos_data: 336
+  probe_response: 305
+  data: 243
+  probe_request: 211
+  action: 117
+  qos_null: 114
+  authentication: 30
+  association_request: 16
+  association_response: 15
+
+unique SSIDs: 7
+unique BSSIDs: 16
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000055 | BEACON_FLOOD
+severity: MEDIUM
+time: 2026-05-16T15:07:24.298970
+message: Wykryto możliwy atak Beacon Flood: 100 ramek beacon, 2 unikalnych BSSID, 2 unikalnych SSID w oknie 10s.
+evidence: {'beacon_count': 100, 'unique_bssid_count': 2, 'unique_ssid_count': 2, 'window_seconds': 10, 'beacon_count_threshold': 100, 'unique_bssid_threshold': 30, 'unique_ssid_threshold': 20, 'triggered_reasons': ['high_beacon_rate'], 'sample_ssids': ['TP-LINK_7122', 'FunBox2-8124'], 'sample_bssids': ['ac:84:c6:41:71:22', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000056 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T15:07:34.591520
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu ac:bd:70:26:6e:74 w oknie 5s.
+evidence: {'source_mac': 'ac:bd:70:26:6e:74', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['70:0b:01:45:f0:90']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000057 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T15:07:37.893669
+message: Wykryto możliwy RTS/CTS Flood: 100 ramek RTS oraz 1 ramek CTS w oknie 5s.
+evidence: {'rts_count': 100, 'cts_count': 1, 'combined_count': 101, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate'], 'unique_source_count': 2, 'unique_destination_count': 3, 'sample_sources': ['54:35:30:cf:ee:1e', 'ac:bd:70:26:6e:74'], 'sample_destinations': ['54:35:30:cf:ee:1e', '70:0b:01:45:f0:90', 'd8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 187.7s
+--------------------------------------------------------------------------------
+total frames: 46522
+
+by frame type:
+  management: 27839
+  control: 16761
+  data: 1922
+
+by frame subtype:
+  deauthentication: 24309
+  ack: 8405
+  block_ack: 3469
+  rts: 3060
+  beacon: 2811
+  null_data: 1159
+  cts: 931
+  block_ack_request: 896
+  qos_data: 362
+  probe_response: 318
+  data: 284
+  probe_request: 220
+  action: 120
+  qos_null: 117
+  authentication: 30
+  association_request: 16
+  association_response: 15
+
+unique SSIDs: 7
+unique BSSIDs: 16
+================================================================================
+
+================================================================================
+DETECTION SUMMARY
+--------------------------------------------------------------------------------
+total alerts: 57
+
+by attack type:
+  DEAUTH_FLOOD: 24
+  RTS_FLOOD_SOURCE: 13
+  BEACON_FLOOD: 11
+  RTS_CTS_FLOOD_GLOBAL: 9
+
+by severity:
+  CRITICAL: 32
+  MEDIUM: 24
+  HIGH: 1
+================================================================================
