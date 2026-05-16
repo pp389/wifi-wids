@@ -1,0 +1,20 @@
+# baseline_03
+
+RUN_NAME=baseline_03
+IFACE=wlan1mon
+DURATION_SECONDS=300
+SCENARIO=baseline
+
+PCAP=data/pcaps/baseline_03.pcap
+CSV=data/logs/baseline_03_frames.csv
+ALERTS=data/logs/baseline_03_alerts.jsonl
+STDOUT_LOG=data/logs/baseline_03_stdout.log
+
+WIDS_START_ISO=2026-05-16T13:01:53,797854338+00:00
+WIDS_START_EPOCH=1778936513.799616433
+
+EXIT_CODE=124
+
+WIDS_STOPPED_ISO=2026-05-16T13:06:54,392527588+00:00
+WIDS_STOPPED_EPOCH=1778936814.394478407
+
