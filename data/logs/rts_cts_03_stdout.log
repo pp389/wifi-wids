@@ -1,0 +1,718 @@
+
+================================================================================
+STATISTICS after 10.1s
+--------------------------------------------------------------------------------
+total frames: 128
+
+by frame type:
+  management: 88
+  control: 24
+  data: 16
+
+by frame subtype:
+  beacon: 85
+  ack: 21
+  null_data: 10
+  data: 4
+  probe_response: 3
+  qos_data: 2
+  rts: 1
+  cts: 1
+  block_ack: 1
+
+unique SSIDs: 1
+unique BSSIDs: 3
+================================================================================
+
+================================================================================
+STATISTICS after 20.1s
+--------------------------------------------------------------------------------
+total frames: 268
+
+by frame type:
+  management: 175
+  control: 58
+  data: 35
+
+by frame subtype:
+  beacon: 165
+  ack: 48
+  null_data: 17
+  qos_data: 10
+  data: 8
+  probe_response: 8
+  rts: 4
+  cts: 3
+  block_ack: 3
+  probe_request: 2
+
+unique SSIDs: 1
+unique BSSIDs: 6
+================================================================================
+
+================================================================================
+STATISTICS after 30.1s
+--------------------------------------------------------------------------------
+total frames: 394
+
+by frame type:
+  management: 269
+  control: 76
+  data: 49
+
+by frame subtype:
+  beacon: 258
+  ack: 65
+  null_data: 26
+  data: 13
+  qos_data: 10
+  probe_response: 8
+  rts: 4
+  cts: 4
+  block_ack: 3
+  probe_request: 2
+  action: 1
+
+unique SSIDs: 1
+unique BSSIDs: 6
+================================================================================
+
+================================================================================
+STATISTICS after 40.2s
+--------------------------------------------------------------------------------
+total frames: 544
+
+by frame type:
+  management: 364
+  control: 101
+  data: 79
+
+by frame subtype:
+  beacon: 350
+  ack: 88
+  null_data: 52
+  data: 15
+  qos_data: 10
+  probe_response: 9
+  cts: 6
+  rts: 4
+  probe_request: 4
+  block_ack: 3
+  qos_null: 2
+  action: 1
+
+unique SSIDs: 1
+unique BSSIDs: 6
+================================================================================
+
+================================================================================
+STATISTICS after 50.2s
+--------------------------------------------------------------------------------
+total frames: 663
+
+by frame type:
+  management: 451
+  control: 119
+  data: 93
+
+by frame subtype:
+  beacon: 437
+  ack: 106
+  null_data: 65
+  data: 16
+  qos_data: 10
+  probe_response: 9
+  cts: 6
+  rts: 4
+  probe_request: 4
+  block_ack: 3
+  qos_null: 2
+  action: 1
+
+unique SSIDs: 1
+unique BSSIDs: 6
+================================================================================
+
+================================================================================
+STATISTICS after 60.2s
+--------------------------------------------------------------------------------
+total frames: 831
+
+by frame type:
+  management: 537
+  control: 163
+  data: 131
+
+by frame subtype:
+  beacon: 523
+  ack: 144
+  null_data: 83
+  data: 34
+  qos_data: 12
+  probe_response: 9
+  cts: 8
+  rts: 6
+  block_ack: 5
+  probe_request: 4
+  qos_null: 2
+  action: 1
+
+unique SSIDs: 1
+unique BSSIDs: 7
+================================================================================
+
+================================================================================
+STATISTICS after 70.2s
+--------------------------------------------------------------------------------
+total frames: 950
+
+by frame type:
+  management: 625
+  control: 186
+  data: 139
+
+by frame subtype:
+  beacon: 603
+  ack: 167
+  null_data: 90
+  data: 35
+  probe_response: 12
+  qos_data: 12
+  probe_request: 9
+  cts: 8
+  rts: 6
+  block_ack: 5
+  qos_null: 2
+  action: 1
+
+unique SSIDs: 1
+unique BSSIDs: 7
+================================================================================
+
+================================================================================
+STATISTICS after 80.4s
+--------------------------------------------------------------------------------
+total frames: 1126
+
+by frame type:
+  management: 724
+  control: 231
+  data: 171
+
+by frame subtype:
+  beacon: 697
+  ack: 206
+  null_data: 101
+  data: 54
+  probe_response: 17
+  qos_data: 14
+  cts: 10
+  probe_request: 9
+  rts: 8
+  block_ack: 7
+  qos_null: 2
+  action: 1
+
+unique SSIDs: 1
+unique BSSIDs: 7
+================================================================================
+
+================================================================================
+STATISTICS after 90.4s
+--------------------------------------------------------------------------------
+total frames: 1279
+
+by frame type:
+  management: 816
+  control: 267
+  data: 196
+
+by frame subtype:
+  beacon: 784
+  ack: 239
+  null_data: 115
+  data: 64
+  probe_response: 19
+  qos_data: 15
+  cts: 11
+  probe_request: 11
+  rts: 9
+  block_ack: 8
+  action: 2
+  qos_null: 2
+
+unique SSIDs: 2
+unique BSSIDs: 8
+================================================================================
+
+================================================================================
+STATISTICS after 100.5s
+--------------------------------------------------------------------------------
+total frames: 1406
+
+by frame type:
+  management: 903
+  control: 294
+  data: 209
+
+by frame subtype:
+  beacon: 871
+  ack: 263
+  null_data: 121
+  data: 68
+  probe_response: 19
+  qos_data: 16
+  cts: 12
+  probe_request: 11
+  rts: 10
+  block_ack: 9
+  qos_null: 4
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 8
+================================================================================
+
+================================================================================
+STATISTICS after 110.5s
+--------------------------------------------------------------------------------
+total frames: 1536
+
+by frame type:
+  management: 999
+  control: 316
+  data: 221
+
+by frame subtype:
+  beacon: 959
+  ack: 285
+  null_data: 127
+  data: 74
+  probe_response: 25
+  qos_data: 16
+  probe_request: 13
+  cts: 12
+  rts: 10
+  block_ack: 9
+  qos_null: 4
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 8
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T16:16:02.675644
+message: Wykryto możliwy RTS/CTS Flood: 62 ramek RTS oraz 88 ramek CTS w oknie 5s.
+evidence: {'rts_count': 62, 'cts_count': 88, 'combined_count': 150, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_combined_rts_cts_rate'], 'unique_source_count': 31, 'unique_destination_count': 29, 'sample_sources': ['02:c3:5c:d8:e9:15', '02:4c:f1:81:38:4b', '02:af:9f:97:12:9c', '02:24:0b:44:35:5f', '02:bc:4c:64:07:b5', '02:02:7d:73:eb:62', '02:82:5f:80:97:3a', '02:79:c2:4c:40:93', '02:4a:bf:bc:89:13', '02:85:a9:71:4a:0f'], 'sample_destinations': ['02:c3:5c:d8:e9:15', '02:4c:f1:81:38:4b', '02:af:9f:97:12:9c', '02:24:0b:44:35:5f', '02:bc:4c:64:07:b5', '02:79:c2:4c:40:93', '02:4a:bf:bc:89:13', '02:85:a9:71:4a:0f', '02:81:d6:61:fe:33', '02:6e:f0:b2:55:49']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 120.5s
+--------------------------------------------------------------------------------
+total frames: 1928
+
+by frame type:
+  management: 1084
+  control: 601
+  data: 243
+
+by frame subtype:
+  beacon: 1044
+  ack: 312
+  cts: 164
+  null_data: 139
+  rts: 116
+  data: 84
+  probe_response: 25
+  qos_data: 16
+  probe_request: 13
+  block_ack: 9
+  qos_null: 4
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:07.687550
+message: Wykryto możliwy RTS/CTS Flood: 290 ramek RTS oraz 419 ramek CTS w oknie 5s.
+evidence: {'rts_count': 290, 'cts_count': 419, 'combined_count': 709, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 145, 'unique_destination_count': 129, 'sample_sources': ['02:4a:1f:ad:48:39', '02:09:f4:98:d4:4e', '02:c7:64:ac:e5:05', '02:76:22:9a:0d:7f', '02:1f:92:18:aa:ff', '02:30:88:10:3a:9a', '02:03:1a:99:dc:3b', '02:d4:13:06:64:61', '02:2d:be:d8:88:57', '02:d5:e7:35:79:47'], 'sample_destinations': ['02:4a:1f:ad:48:39', '02:09:f4:98:d4:4e', '02:c7:64:ac:e5:05', '02:1f:92:18:aa:ff', '02:03:1a:99:dc:3b', '02:d4:13:06:64:61', '02:d5:e7:35:79:47', '02:ed:73:12:94:ce', '02:ca:12:3a:58:38', '02:7c:4b:f8:d8:b5']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000003 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:12.707184
+message: Wykryto możliwy RTS/CTS Flood: 286 ramek RTS oraz 418 ramek CTS w oknie 5s.
+evidence: {'rts_count': 286, 'cts_count': 418, 'combined_count': 704, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 144, 'unique_destination_count': 133, 'sample_sources': ['02:f7:bc:f8:cc:4c', '02:3f:3a:b8:a5:f9', '02:37:11:15:a9:6c', '02:44:09:8d:47:0e', '02:d6:56:f5:8c:b9', '02:3d:66:86:bb:24', '02:c8:01:55:12:16', '02:ad:68:1f:03:c2', '02:df:ee:db:20:a1', '02:66:3b:d5:9d:3d'], 'sample_destinations': ['02:f7:bc:f8:cc:4c', '02:3f:3a:b8:a5:f9', '02:44:09:8d:47:0e', '02:d6:56:f5:8c:b9', '02:3d:66:86:bb:24', '02:c8:01:55:12:16', '02:ad:68:1f:03:c2', 'd8:d7:75:45:81:24', '02:df:ee:db:20:a1', '02:66:3b:d5:9d:3d']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 130.5s
+--------------------------------------------------------------------------------
+total frames: 3464
+
+by frame type:
+  control: 2039
+  management: 1173
+  data: 252
+
+by frame subtype:
+  beacon: 1133
+  cts: 1004
+  rts: 693
+  ack: 332
+  null_data: 143
+  data: 88
+  probe_response: 25
+  qos_data: 17
+  probe_request: 13
+  block_ack: 10
+  qos_null: 4
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000004 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:17.708051
+message: Wykryto możliwy RTS/CTS Flood: 288 ramek RTS oraz 430 ramek CTS w oknie 5s.
+evidence: {'rts_count': 288, 'cts_count': 430, 'combined_count': 718, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 145, 'unique_destination_count': 142, 'sample_sources': ['02:d1:77:c5:60:fb', '02:37:92:96:59:95', '02:28:bd:f5:5b:b6', '02:7b:32:e1:b2:36', '02:f8:0d:31:3c:b7', '02:e8:9f:fa:ed:bb', '02:80:d8:91:10:b1', '02:d6:a9:d8:00:93', '02:64:d4:f0:32:c7', '02:61:0c:ca:ac:97'], 'sample_destinations': ['02:d1:77:c5:60:fb', '02:37:92:96:59:95', '02:28:bd:f5:5b:b6', '02:7b:32:e1:b2:36', '02:f8:0d:31:3c:b7', '02:e8:9f:fa:ed:bb', '02:80:d8:91:10:b1', '02:d6:a9:d8:00:93', '02:64:d4:f0:32:c7', '02:61:0c:ca:ac:97']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000005 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:22.731689
+message: Wykryto możliwy RTS/CTS Flood: 287 ramek RTS oraz 426 ramek CTS w oknie 5s.
+evidence: {'rts_count': 287, 'cts_count': 426, 'combined_count': 713, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 144, 'unique_destination_count': 139, 'sample_sources': ['02:68:14:bf:67:01', '02:46:b4:4c:dc:27', '02:26:62:0b:9f:60', '02:55:65:97:c9:22', '02:dd:0b:d7:d4:d1', '02:e1:b4:5d:f6:d9', '02:6c:9e:40:dd:ed', '02:c5:ba:32:79:fb', '02:3b:cf:fa:6f:39', '02:1e:21:d3:e1:3d'], 'sample_destinations': ['02:68:14:bf:67:01', '02:46:b4:4c:dc:27', '02:26:62:0b:9f:60', '02:55:65:97:c9:22', '02:dd:0b:d7:d4:d1', '02:e1:b4:5d:f6:d9', '02:6c:9e:40:dd:ed', '02:c5:ba:32:79:fb', '02:3b:cf:fa:6f:39', '02:1e:21:d3:e1:3d']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 140.5s
+--------------------------------------------------------------------------------
+total frames: 5036
+
+by frame type:
+  control: 3494
+  management: 1262
+  data: 280
+
+by frame subtype:
+  cts: 1859
+  rts: 1269
+  beacon: 1219
+  ack: 354
+  null_data: 167
+  data: 90
+  probe_response: 28
+  qos_data: 19
+  probe_request: 13
+  block_ack: 12
+  qos_null: 4
+  action: 2
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000006 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:27.743120
+message: Wykryto możliwy RTS/CTS Flood: 283 ramek RTS oraz 418 ramek CTS w oknie 5s.
+evidence: {'rts_count': 283, 'cts_count': 418, 'combined_count': 701, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 142, 'unique_destination_count': 136, 'sample_sources': ['02:37:c6:86:4f:a7', '02:cd:30:83:35:74', '02:81:23:2d:e9:08', '02:0f:ad:33:8b:a0', '02:fd:53:5a:09:0f', '02:92:8d:c2:15:01', '02:cf:f8:33:fb:6f', '02:49:6f:0c:5b:db', '02:f8:23:d9:ec:de', '02:a3:14:b3:5a:dd'], 'sample_destinations': ['02:37:c6:86:4f:a7', '02:cd:30:83:35:74', '02:81:23:2d:e9:08', '02:0f:ad:33:8b:a0', '02:fd:53:5a:09:0f', '02:92:8d:c2:15:01', '02:cf:f8:33:fb:6f', '02:49:6f:0c:5b:db', '02:f8:23:d9:ec:de', '02:a3:14:b3:5a:dd']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000007 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:32.755685
+message: Wykryto możliwy RTS/CTS Flood: 286 ramek RTS oraz 426 ramek CTS w oknie 5s.
+evidence: {'rts_count': 286, 'cts_count': 426, 'combined_count': 712, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 143, 'unique_destination_count': 140, 'sample_sources': ['02:9c:90:09:39:0e', '02:98:6a:9e:9e:bb', '02:33:ed:34:d2:fe', '02:12:19:8c:e9:9e', '02:52:c0:cc:d6:52', '02:e4:cd:90:c7:c4', '02:fd:59:e2:e3:10', '02:c1:b0:61:87:d7', '02:a4:5e:45:24:79', '02:af:87:67:5b:6a'], 'sample_destinations': ['02:9c:90:09:39:0e', '02:98:6a:9e:9e:bb', '02:33:ed:34:d2:fe', '02:12:19:8c:e9:9e', '02:52:c0:cc:d6:52', '02:e4:cd:90:c7:c4', '02:fd:59:e2:e3:10', '02:c1:b0:61:87:d7', '02:a4:5e:45:24:79', '02:af:87:67:5b:6a']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 150.5s
+--------------------------------------------------------------------------------
+total frames: 6601
+
+by frame type:
+  control: 4933
+  management: 1354
+  data: 314
+
+by frame subtype:
+  cts: 2701
+  rts: 1839
+  beacon: 1309
+  ack: 381
+  null_data: 194
+  data: 96
+  probe_response: 28
+  qos_data: 19
+  probe_request: 13
+  block_ack: 12
+  qos_null: 5
+  action: 4
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000008 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:37.767094
+message: Wykryto możliwy RTS/CTS Flood: 283 ramek RTS oraz 414 ramek CTS w oknie 5s.
+evidence: {'rts_count': 283, 'cts_count': 414, 'combined_count': 697, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 142, 'unique_destination_count': 133, 'sample_sources': ['02:cf:af:56:7b:5e', '02:64:8c:96:f1:74', '02:40:6b:8c:32:7e', '02:bd:57:6b:33:50', '02:4a:be:3a:96:b4', '02:5a:21:6c:22:60', '02:62:29:80:58:98', '02:6b:ca:11:67:eb', '02:30:b7:8a:23:94', '02:7e:5b:ce:4f:95'], 'sample_destinations': ['02:cf:af:56:7b:5e', '02:64:8c:96:f1:74', '02:40:6b:8c:32:7e', '02:bd:57:6b:33:50', '02:4a:be:3a:96:b4', '02:5a:21:6c:22:60', '02:62:29:80:58:98', '02:6b:ca:11:67:eb', '02:30:b7:8a:23:94', '02:7e:5b:ce:4f:95']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000009 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:42.775609
+message: Wykryto możliwy RTS/CTS Flood: 284 ramek RTS oraz 413 ramek CTS w oknie 5s.
+evidence: {'rts_count': 284, 'cts_count': 413, 'combined_count': 697, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 142, 'unique_destination_count': 129, 'sample_sources': ['02:4a:94:ec:fc:7e', '02:26:56:d1:14:e4', '02:fd:54:a7:5a:7f', '02:56:7e:ed:01:95', '02:88:a1:e9:fd:6d', '02:fe:ad:22:4c:d1', '02:f1:8e:e9:f4:c4', '02:0c:86:bf:bf:f5', '02:d1:a5:92:b9:15', '02:54:f6:40:bc:ce'], 'sample_destinations': ['02:4a:94:ec:fc:7e', '02:26:56:d1:14:e4', '02:fd:54:a7:5a:7f', '02:56:7e:ed:01:95', '02:88:a1:e9:fd:6d', '02:fe:ad:22:4c:d1', '02:f1:8e:e9:f4:c4', '02:0c:86:bf:bf:f5', '02:d1:a5:92:b9:15', '02:54:f6:40:bc:ce']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 160.5s
+--------------------------------------------------------------------------------
+total frames: 8146
+
+by frame type:
+  control: 6365
+  management: 1448
+  data: 333
+
+by frame subtype:
+  cts: 3533
+  rts: 2408
+  beacon: 1401
+  ack: 412
+  null_data: 202
+  data: 106
+  probe_response: 29
+  qos_data: 19
+  probe_request: 14
+  block_ack: 12
+  qos_null: 6
+  action: 4
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000010 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:47.775736
+message: Wykryto możliwy RTS/CTS Flood: 286 ramek RTS oraz 422 ramek CTS w oknie 5s.
+evidence: {'rts_count': 286, 'cts_count': 422, 'combined_count': 708, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 143, 'unique_destination_count': 136, 'sample_sources': ['02:46:4d:06:09:5f', '02:02:7e:24:23:82', '02:66:32:b9:55:73', '02:8b:7d:fa:e8:ae', '02:27:b5:78:77:c2', '02:f6:53:8a:e6:15', '02:4d:3f:72:bf:b5', '02:fa:ac:aa:28:27', '02:7e:55:ce:4e:f7', '02:b7:14:d8:76:30'], 'sample_destinations': ['02:46:4d:06:09:5f', '02:02:7e:24:23:82', '02:66:32:b9:55:73', '02:8b:7d:fa:e8:ae', '02:27:b5:78:77:c2', '02:f6:53:8a:e6:15', '02:4d:3f:72:bf:b5', '02:fa:ac:aa:28:27', '02:7e:55:ce:4e:f7', '02:b7:14:d8:76:30']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000011 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:52.775745
+message: Wykryto możliwy RTS/CTS Flood: 282 ramek RTS oraz 415 ramek CTS w oknie 5s.
+evidence: {'rts_count': 282, 'cts_count': 415, 'combined_count': 697, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 141, 'unique_destination_count': 134, 'sample_sources': ['02:ce:86:7a:25:ed', '02:e5:bb:f8:4a:9c', '02:72:6f:29:c4:08', '02:5f:a2:1e:14:fd', '02:25:53:1f:6e:18', '02:8d:39:03:da:b3', '02:ce:67:2a:ff:96', '02:e5:0d:8d:9f:a5', '02:a4:e7:83:6e:5a', '02:02:41:ff:0e:2e'], 'sample_destinations': ['02:ce:86:7a:25:ed', '02:e5:bb:f8:4a:9c', '02:72:6f:29:c4:08', '02:5f:a2:1e:14:fd', '02:25:53:1f:6e:18', '02:8d:39:03:da:b3', '02:ce:67:2a:ff:96', '02:e5:0d:8d:9f:a5', '02:a4:e7:83:6e:5a', '02:02:41:ff:0e:2e']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 170.5s
+--------------------------------------------------------------------------------
+total frames: 9667
+
+by frame type:
+  control: 7783
+  management: 1534
+  data: 350
+
+by frame subtype:
+  cts: 4364
+  rts: 2974
+  beacon: 1480
+  ack: 433
+  null_data: 217
+  data: 108
+  probe_response: 34
+  qos_data: 19
+  probe_request: 16
+  block_ack: 12
+  qos_null: 6
+  action: 4
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000012 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T16:16:57.787067
+message: Wykryto możliwy RTS/CTS Flood: 289 ramek RTS oraz 419 ramek CTS w oknie 5s.
+evidence: {'rts_count': 289, 'cts_count': 419, 'combined_count': 708, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 145, 'unique_destination_count': 133, 'sample_sources': ['02:34:e9:32:80:4e', '02:b8:de:df:75:47', '02:e8:a9:32:91:d4', '02:8c:3c:77:ba:29', '02:40:0a:dc:7f:d5', '02:ea:75:a1:59:0f', '02:59:9a:76:df:1c', '02:a3:c0:f1:7b:8b', '02:47:f7:6b:5c:55', '02:1f:b7:29:29:f6'], 'sample_destinations': ['02:34:e9:32:80:4e', '02:b8:de:df:75:47', '02:e8:a9:32:91:d4', '02:8c:3c:77:ba:29', '02:40:0a:dc:7f:d5', '02:ea:75:a1:59:0f', '02:59:9a:76:df:1c', '02:a3:c0:f1:7b:8b', '02:47:f7:6b:5c:55', '02:1f:b7:29:29:f6']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 180.5s
+--------------------------------------------------------------------------------
+total frames: 10869
+
+by frame type:
+  control: 8871
+  management: 1614
+  data: 384
+
+by frame subtype:
+  cts: 4992
+  rts: 3404
+  beacon: 1560
+  ack: 461
+  null_data: 244
+  data: 114
+  probe_response: 34
+  qos_data: 20
+  probe_request: 16
+  block_ack: 14
+  qos_null: 6
+  action: 4
+
+unique SSIDs: 2
+unique BSSIDs: 9
+================================================================================
+
+================================================================================
+STATISTICS after 190.6s
+--------------------------------------------------------------------------------
+total frames: 10999
+
+by frame type:
+  control: 8890
+  management: 1701
+  data: 408
+
+by frame subtype:
+  cts: 4992
+  rts: 3404
+  beacon: 1647
+  ack: 480
+  null_data: 262
+  data: 120
+  probe_response: 34
+  qos_data: 20
+  probe_request: 16
+  block_ack: 14
+  qos_null: 6
+  action: 4
+
+unique SSIDs: 2
+unique BSSIDs: 10
+================================================================================
+
+================================================================================
+STATISTICS after 200.6s
+--------------------------------------------------------------------------------
+total frames: 11154
+
+by frame type:
+  control: 8930
+  management: 1792
+  data: 432
+
+by frame subtype:
+  cts: 4995
+  rts: 3409
+  beacon: 1738
+  ack: 508
+  null_data: 278
+  data: 122
+  probe_response: 34
+  qos_data: 26
+  block_ack: 18
+  probe_request: 16
+  qos_null: 6
+  action: 4
+
+unique SSIDs: 2
+unique BSSIDs: 10
+================================================================================
+
+================================================================================
+STATISTICS after 210.6s
+--------------------------------------------------------------------------------
+total frames: 11338
+
+by frame type:
+  control: 8977
+  management: 1882
+  data: 479
+
+by frame subtype:
+  cts: 4996
+  rts: 3410
+  beacon: 1827
+  ack: 552
+  null_data: 304
+  data: 141
+  probe_response: 34
+  qos_data: 27
+  block_ack: 19
+  probe_request: 16
+  qos_null: 7
+  action: 5
+
+unique SSIDs: 2
+unique BSSIDs: 11
+================================================================================
+
+================================================================================
+STATISTICS after 220.7s
+--------------------------------------------------------------------------------
+total frames: 11449
+
+by frame type:
+  control: 8991
+  management: 1968
+  data: 490
+
+by frame subtype:
+  cts: 4996
+  rts: 3410
+  beacon: 1913
+  ack: 566
+  null_data: 313
+  data: 143
+  probe_response: 34
+  qos_data: 27
+  block_ack: 19
+  probe_request: 16
+  qos_null: 7
+  action: 5
+
+unique SSIDs: 2
+unique BSSIDs: 11
+================================================================================

@@ -3,7 +3,7 @@ set -euo pipefail
 
 if [ "$#" -lt 6 ]; then
   echo "Usage:"
-  echo "  sudo bash scripts/run_attack_experiment.sh RUN_NAME IFACE PRE_SECONDS ATTACK_SECONDS POST_SECONDS ATTACK_COMMAND"
+  echo "  sudo -E bash scripts/run_attack_experiment.sh RUN_NAME IFACE PRE_SECONDS ATTACK_SECONDS POST_SECONDS ATTACK_COMMAND"
   exit 1
 fi
 
@@ -22,6 +22,8 @@ ALERTS="data/logs/${RUN_NAME}_alerts.jsonl"
 STDOUT_LOG="data/logs/${RUN_NAME}_stdout.log"
 NOTE="data/notes/${RUN_NAME}.md"
 
+WIDS_PGID=""
+
 mkdir -p data/pcaps data/logs data/notes
 
 log_event() {
@@ -36,6 +38,32 @@ log_event() {
   echo "${label}_EPOCH=${epoch}" | tee -a "$NOTE"
   echo "" | tee -a "$NOTE"
 }
+
+cleanup_wids() {
+  if [ -n "${WIDS_PGID}" ]; then
+    echo "[+] Stopping WIDS process group: ${WIDS_PGID}"
+
+    # Najpierw łagodne przerwanie, żeby Python zamknął CSV/JSONL/PCAP.
+    kill -INT "-${WIDS_PGID}" 2>/dev/null || true
+    sleep 3
+
+    # Jeśli dalej działa, użyj TERM.
+    if ps -p "${WIDS_PGID}" >/dev/null 2>&1; then
+      echo "[!] WIDS still running, sending TERM..."
+      kill -TERM "-${WIDS_PGID}" 2>/dev/null || true
+      sleep 2
+    fi
+
+    # Jeśli dalej działa, użyj KILL.
+    if ps -p "${WIDS_PGID}" >/dev/null 2>&1; then
+      echo "[!] WIDS still running, sending KILL..."
+      kill -KILL "-${WIDS_PGID}" 2>/dev/null || true
+      sleep 1
+    fi
+  fi
+}
+
+trap cleanup_wids EXIT INT TERM
 
 {
   echo "# ${RUN_NAME}"
@@ -58,15 +86,18 @@ log_event() {
 echo "[+] Starting WIDS for ${RUN_NAME}"
 log_event "WIDS_START"
 
-python main.py -i "$IFACE" --detect --summary --quiet \
-  --csv "$CSV" \
-  --alerts-json "$ALERTS" \
-  --pcap-output "$PCAP" \
-  > "$STDOUT_LOG" 2>&1 &
+# setsid tworzy osobną grupę procesów.
+# Dzięki temu można później ubić całą grupę przez kill -INT -PGID.
+setsid bash -c "
+  python main.py -i '$IFACE' --detect --summary --quiet \
+    --csv '$CSV' \
+    --alerts-json '$ALERTS' \
+    --pcap-output '$PCAP'
+" > "$STDOUT_LOG" 2>&1 &
 
-WIDS_PID="$!"
+WIDS_PGID="$!"
 
-echo "WIDS_PID=${WIDS_PID}" | tee -a "$NOTE"
+echo "WIDS_PGID=${WIDS_PGID}" | tee -a "$NOTE"
 echo "" | tee -a "$NOTE"
 
 sleep "$PRE_SECONDS"
@@ -89,10 +120,11 @@ sleep "$POST_SECONDS"
 echo "[+] Stopping WIDS for ${RUN_NAME}"
 log_event "WIDS_STOP_REQUEST"
 
-kill -INT "$WIDS_PID" 2>/dev/null || true
-wait "$WIDS_PID" 2>/dev/null || true
+cleanup_wids
 
 log_event "WIDS_STOPPED"
+
+WIDS_PGID=""
 
 echo "[+] Experiment finished: ${RUN_NAME}"
 echo "[+] Files:"
