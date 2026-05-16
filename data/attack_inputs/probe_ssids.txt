@@ -1,0 +1,16 @@
+HomeWiFi
+OfficeWiFi
+GuestWiFi
+CoffeeShop
+AirportFreeWiFi
+HotelWiFi
+TestProbe_001
+TestProbe_002
+TestProbe_003
+TestProbe_004
+TestProbe_005
+TestProbe_006
+TestProbe_007
+TestProbe_008
+TestProbe_009
+TestProbe_010
