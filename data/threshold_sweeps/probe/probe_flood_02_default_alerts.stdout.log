@@ -1,0 +1,1755 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000001 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:09:02.385705
+message: Wykryto możliwy RTS/CTS Flood: 86 ramek RTS oraz 64 ramek CTS w oknie 5s.
+evidence: {'rts_count': 86, 'cts_count': 64, 'combined_count': 150, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000002 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:09:02.538911
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000003 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:09:02.620164
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000004 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:09:07.388301
+message: Wykryto możliwy RTS/CTS Flood: 324 ramek RTS oraz 284 ramek CTS w oknie 5s.
+evidence: {'rts_count': 324, 'cts_count': 284, 'combined_count': 608, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', 'e0:3e:44:04:28:ac', '54:35:30:cf:ee:1e']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000005 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:09:07.816997
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 147 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 147, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000006 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:09:07.897075
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 166 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 166, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000007 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:09:32.537717
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000008 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:09:32.577411
+message: Wykryto możliwy RTS/CTS Flood: 100 ramek RTS oraz 11 ramek CTS w oknie 5s.
+evidence: {'rts_count': 100, 'cts_count': 11, 'combined_count': 111, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate'], 'unique_source_count': 3, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000009 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:09:34.922082
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000010 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:09:37.561797
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 427 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 427, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000011 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:09:37.600673
+message: Wykryto możliwy RTS/CTS Flood: 446 ramek RTS oraz 144 ramek CTS w oknie 5s.
+evidence: {'rts_count': 446, 'cts_count': 144, 'combined_count': 590, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 5, 'sample_sources': ['d8:d7:75:45:81:24', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000012 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:09:41.300797
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000013 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:09:42.587628
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 189 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 189, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000014 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:09:42.657891
+message: Wykryto możliwy RTS/CTS Flood: 227 ramek RTS oraz 93 ramek CTS w oknie 5s.
+evidence: {'rts_count': 227, 'cts_count': 93, 'combined_count': 320, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000015 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:09:46.322741
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 52 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 52, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000016 | RTS_CTS_FLOOD_GLOBAL
+severity: HIGH
+time: 2026-05-16T19:09:47.764390
+message: Wykryto możliwy RTS/CTS Flood: 172 ramek RTS oraz 37 ramek CTS w oknie 5s.
+evidence: {'rts_count': 172, 'cts_count': 37, 'combined_count': 209, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000017 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:09:47.764390
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 126 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 126, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000018 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:09:55.166118
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000019 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:09:55.323067
+message: Wykryto możliwy RTS/CTS Flood: 100 ramek RTS oraz 22 ramek CTS w oknie 5s.
+evidence: {'rts_count': 100, 'cts_count': 22, 'combined_count': 122, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000020 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:09:56.535053
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000021 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:10:00.198868
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 236 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 236, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000022 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:10:00.343691
+message: Wykryto możliwy RTS/CTS Flood: 294 ramek RTS oraz 83 ramek CTS w oknie 5s.
+evidence: {'rts_count': 294, 'cts_count': 83, 'combined_count': 377, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 10.0s
+--------------------------------------------------------------------------------
+total frames: 5936
+
+by frame type:
+  control: 4907
+  management: 538
+  data: 491
+
+by frame subtype:
+  rts: 1834
+  block_ack: 1714
+  cts: 779
+  ack: 554
+  beacon: 452
+  qos_null: 219
+  null_data: 159
+  data: 85
+  probe_response: 36
+  qos_data: 28
+  block_ack_request: 24
+  deauthentication: 17
+  probe_request: 16
+  action: 14
+  authentication: 2
+  reassociation_request: 1
+  ps_poll: 1
+  cf_end: 1
+
+unique SSIDs: 3
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000023 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:05.546965
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000024 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:10:06.337829
+message: Wykryto możliwy RTS/CTS Flood: 96 ramek RTS oraz 54 ramek CTS w oknie 5s.
+evidence: {'rts_count': 96, 'cts_count': 54, 'combined_count': 150, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000025 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:09.425616
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 20.0s
+--------------------------------------------------------------------------------
+total frames: 7019
+
+by frame type:
+  control: 5775
+  data: 627
+  management: 617
+
+by frame subtype:
+  rts: 2130
+  block_ack: 2002
+  cts: 921
+  ack: 696
+  beacon: 519
+  qos_null: 330
+  null_data: 177
+  data: 90
+  probe_response: 44
+  qos_data: 30
+  block_ack_request: 24
+  probe_request: 20
+  deauthentication: 17
+  action: 14
+  authentication: 2
+  reassociation_request: 1
+  ps_poll: 1
+  cf_end: 1
+
+unique SSIDs: 3
+unique BSSIDs: 11
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000026 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:10:10.600680
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 170 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 170, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000027 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:10:11.494508
+message: Wykryto możliwy RTS/CTS Flood: 224 ramek RTS oraz 97 ramek CTS w oknie 5s.
+evidence: {'rts_count': 224, 'cts_count': 97, 'combined_count': 321, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000028 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:15.724550
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 78 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 78, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000029 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:10:16.546278
+message: Wykryto możliwy RTS/CTS Flood: 101 ramek RTS oraz 25 ramek CTS w oknie 5s.
+evidence: {'rts_count': 101, 'cts_count': 25, 'combined_count': 126, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate'], 'unique_source_count': 4, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000030 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:20.139827
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000031 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:20.930917
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 98 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 98, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000032 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:10:21.711875
+message: Wykryto możliwy RTS/CTS Flood: 134 ramek RTS oraz 64 ramek CTS w oknie 5s.
+evidence: {'rts_count': 134, 'cts_count': 64, 'combined_count': 198, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000033 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:26.159183
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000034 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:10:26.757643
+message: Wykryto możliwy RTS/CTS Flood: 133 ramek RTS oraz 42 ramek CTS w oknie 5s.
+evidence: {'rts_count': 133, 'cts_count': 42, 'combined_count': 175, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000035 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:27.076655
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000036 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:10:31.592415
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 158 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 158, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000037 | RTS_CTS_FLOOD_GLOBAL
+severity: HIGH
+time: 2026-05-16T19:10:32.411099
+message: Wykryto możliwy RTS/CTS Flood: 161 ramek RTS oraz 60 ramek CTS w oknie 5s.
+evidence: {'rts_count': 161, 'cts_count': 60, 'combined_count': 221, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000038 | PROBE_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:10:55.895912
+message: Wykryto możliwy Probe Flood z pojedynczego źródła: 50 ramek probe request z adresu 02:12:34:56:78:9a, 16 unikalnych SSID w oknie 10s.
+evidence: {'source_mac': '02:12:34:56:78:9a', 'probe_count': 50, 'unique_ssid_count': 16, 'per_source_threshold': 50, 'unique_ssid_per_source_threshold': 20, 'window_seconds': 10, 'triggered_reasons': ['high_probe_rate_from_single_source'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'GuestWiFi', 'TestProbe_004', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000039 | PROBE_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:10:56.352050
+message: Wykryto możliwy globalny Probe Flood: 100 ramek probe request w oknie 10s.
+evidence: {'probe_count': 100, 'unique_source_count': 4, 'unique_ssid_count': 17, 'threshold': 100, 'window_seconds': 10, 'sample_sources': ['3e:48:1c:5a:b2:7a', '86:67:e0:9b:ee:6a', '02:12:34:56:78:9a', '36:0b:67:ef:6b:92'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'FunBox2-8124', 'TestProbe_006', 'GuestWiFi', 'TestProbe_004', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000040 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:58.868316
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000041 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:10:58.909315
+message: Wykryto możliwy RTS/CTS Flood: 100 ramek RTS oraz 50 ramek CTS w oknie 5s.
+evidence: {'rts_count': 100, 'cts_count': 50, 'combined_count': 150, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000042 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:10:59.227117
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000043 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:11:04.665628
+message: Wykryto możliwy RTS/CTS Flood: 131 ramek RTS oraz 31 ramek CTS w oknie 5s.
+evidence: {'rts_count': 131, 'cts_count': 31, 'combined_count': 162, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000044 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:11:04.665628
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 101 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 101, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000045 | PROBE_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:11:05.899423
+message: Wykryto możliwy Probe Flood z pojedynczego źródła: 900 ramek probe request z adresu 02:12:34:56:78:9a, 16 unikalnych SSID w oknie 10s.
+evidence: {'source_mac': '02:12:34:56:78:9a', 'probe_count': 900, 'unique_ssid_count': 16, 'per_source_threshold': 50, 'unique_ssid_per_source_threshold': 20, 'window_seconds': 10, 'triggered_reasons': ['high_probe_rate_from_single_source'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'TestProbe_004', 'GuestWiFi', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000046 | PROBE_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:11:06.352144
+message: Wykryto możliwy globalny Probe Flood: 899 ramek probe request w oknie 10s.
+evidence: {'probe_count': 899, 'unique_source_count': 3, 'unique_ssid_count': 16, 'threshold': 100, 'window_seconds': 10, 'sample_sources': ['ae:de:c0:ea:32:0d', '02:12:34:56:78:9a', 'f2:3f:60:74:aa:c1'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'GuestWiFi', 'TestProbe_004', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000047 | PROBE_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:11:15.915257
+message: Wykryto możliwy Probe Flood z pojedynczego źródła: 843 ramek probe request z adresu 02:12:34:56:78:9a, 16 unikalnych SSID w oknie 10s.
+evidence: {'source_mac': '02:12:34:56:78:9a', 'probe_count': 843, 'unique_ssid_count': 16, 'per_source_threshold': 50, 'unique_ssid_per_source_threshold': 20, 'window_seconds': 10, 'triggered_reasons': ['high_probe_rate_from_single_source'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'GuestWiFi', 'TestProbe_004', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000048 | PROBE_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:11:16.352380
+message: Wykryto możliwy globalny Probe Flood: 839 ramek probe request w oknie 10s.
+evidence: {'probe_count': 839, 'unique_source_count': 2, 'unique_ssid_count': 16, 'threshold': 100, 'window_seconds': 10, 'sample_sources': ['02:12:34:56:78:9a', '96:36:c4:dd:d1:a1'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'GuestWiFi', 'TestProbe_004', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 30.0s
+--------------------------------------------------------------------------------
+total frames: 14119
+
+by frame type:
+  control: 9076
+  management: 3764
+  data: 1279
+
+by frame subtype:
+  rts: 3276
+  block_ack: 2876
+  probe_request: 2509
+  ack: 1538
+  cts: 1360
+  beacon: 1121
+  qos_null: 716
+  null_data: 354
+  data: 168
+  probe_response: 96
+  qos_data: 41
+  block_ack_request: 24
+  action: 18
+  deauthentication: 17
+  authentication: 2
+  reassociation_request: 1
+  ps_poll: 1
+  cf_end: 1
+
+unique SSIDs: 20
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000049 | PROBE_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:11:25.927116
+message: Wykryto możliwy Probe Flood z pojedynczego źródła: 829 ramek probe request z adresu 02:12:34:56:78:9a, 16 unikalnych SSID w oknie 10s.
+evidence: {'source_mac': '02:12:34:56:78:9a', 'probe_count': 829, 'unique_ssid_count': 16, 'per_source_threshold': 50, 'unique_ssid_per_source_threshold': 20, 'window_seconds': 10, 'triggered_reasons': ['high_probe_rate_from_single_source'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'TestProbe_004', 'GuestWiFi', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000050 | PROBE_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:11:26.375513
+message: Wykryto możliwy globalny Probe Flood: 834 ramek probe request w oknie 10s.
+evidence: {'probe_count': 834, 'unique_source_count': 2, 'unique_ssid_count': 17, 'threshold': 100, 'window_seconds': 10, 'sample_sources': ['02:12:34:56:78:9a', '36:0b:67:ef:6b:92'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'FunBox2-8124', 'TestProbe_006', 'TestProbe_004', 'GuestWiFi', 'HotelWiFi', 'CoffeeShop', 'TestProbe_003', 'HomeWiFi']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000051 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:11:28.809463
+message: Wykryto możliwy RTS/CTS Flood: 81 ramek RTS oraz 69 ramek CTS w oknie 5s.
+evidence: {'rts_count': 81, 'cts_count': 69, 'combined_count': 150, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 2, 'sample_sources': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000052 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:11:28.836330
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000053 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:11:28.865370
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000054 | PROBE_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:11:35.927314
+message: Wykryto możliwy Probe Flood z pojedynczego źródła: 862 ramek probe request z adresu 02:12:34:56:78:9a, 16 unikalnych SSID w oknie 10s.
+evidence: {'source_mac': '02:12:34:56:78:9a', 'probe_count': 862, 'unique_ssid_count': 16, 'per_source_threshold': 50, 'unique_ssid_per_source_threshold': 20, 'window_seconds': 10, 'triggered_reasons': ['high_probe_rate_from_single_source'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'GuestWiFi', 'TestProbe_004', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000055 | PROBE_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:11:36.387279
+message: Wykryto możliwy globalny Probe Flood: 866 ramek probe request w oknie 10s.
+evidence: {'probe_count': 866, 'unique_source_count': 2, 'unique_ssid_count': 16, 'threshold': 100, 'window_seconds': 10, 'sample_sources': ['02:12:34:56:78:9a', 'be:20:7e:78:e9:7a'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'TestProbe_004', 'GuestWiFi', 'HotelWiFi', 'CoffeeShop', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000056 | PROBE_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:11:45.939225
+message: Wykryto możliwy Probe Flood z pojedynczego źródła: 871 ramek probe request z adresu 02:12:34:56:78:9a, 16 unikalnych SSID w oknie 10s.
+evidence: {'source_mac': '02:12:34:56:78:9a', 'probe_count': 871, 'unique_ssid_count': 16, 'per_source_threshold': 50, 'unique_ssid_per_source_threshold': 20, 'window_seconds': 10, 'triggered_reasons': ['high_probe_rate_from_single_source'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'GuestWiFi', 'TestProbe_004', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000057 | PROBE_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:11:46.399212
+message: Wykryto możliwy globalny Probe Flood: 868 ramek probe request w oknie 10s.
+evidence: {'probe_count': 868, 'unique_source_count': 2, 'unique_ssid_count': 17, 'threshold': 100, 'window_seconds': 10, 'sample_sources': ['76:d9:b6:fc:28:ac', '02:12:34:56:78:9a'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'FunBox2-8124', 'TestProbe_006', 'TestProbe_004', 'GuestWiFi', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000058 | RTS_CTS_FLOOD_GLOBAL
+severity: MEDIUM
+time: 2026-05-16T19:11:52.716531
+message: Wykryto możliwy RTS/CTS Flood: 77 ramek RTS oraz 73 ramek CTS w oknie 5s.
+evidence: {'rts_count': 77, 'cts_count': 73, 'combined_count': 150, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000059 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:11:52.847309
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 50, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000060 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:11:52.923133
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000061 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:11:57.719790
+message: Wykryto możliwy RTS/CTS Flood: 1045 ramek RTS oraz 625 ramek CTS w oknie 5s.
+evidence: {'rts_count': 1045, 'cts_count': 625, 'combined_count': 1670, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 4, 'unique_destination_count': 5, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92', '54:35:30:cf:ee:1e'], 'sample_destinations': ['e0:3e:44:04:28:ac', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000062 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:11:57.858682
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 495 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 495, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000063 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:11:57.926963
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 560 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 560, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000064 | PROBE_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:11:58.775702
+message: Wykryto możliwy globalny Probe Flood: 470 ramek probe request w oknie 10s.
+evidence: {'probe_count': 470, 'unique_source_count': 2, 'unique_ssid_count': 16, 'threshold': 100, 'window_seconds': 10, 'sample_sources': ['c6:06:ab:e0:b5:a3', '02:12:34:56:78:9a'], 'sample_ssids': ['TestProbe_002', 'TestProbe_007', 'TestProbe_006', 'GuestWiFi', 'TestProbe_004', 'CoffeeShop', 'HotelWiFi', 'TestProbe_003', 'HomeWiFi', 'TestProbe_009']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000065 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:12:00.107690
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 40.0s
+--------------------------------------------------------------------------------
+total frames: 23638
+
+by frame type:
+  control: 15344
+  management: 6705
+  data: 1589
+
+by frame subtype:
+  rts: 5568
+  probe_request: 5112
+  block_ack: 4827
+  cts: 2754
+  ack: 2162
+  beacon: 1426
+  qos_null: 855
+  null_data: 464
+  data: 221
+  probe_response: 113
+  qos_data: 49
+  block_ack_request: 31
+  action: 30
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  ps_poll: 1
+  cf_end: 1
+  reassociation_response: 1
+
+unique SSIDs: 20
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000066 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:02.721004
+message: Wykryto możliwy RTS/CTS Flood: 1118 ramek RTS oraz 567 ramek CTS w oknie 5s.
+evidence: {'rts_count': 1118, 'cts_count': 567, 'combined_count': 1685, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000067 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:02.915252
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 623 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 623, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000068 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:02.948392
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 415 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 415, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000069 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:07.725329
+message: Wykryto możliwy RTS/CTS Flood: 1218 ramek RTS oraz 433 ramek CTS w oknie 5s.
+evidence: {'rts_count': 1218, 'cts_count': 433, 'combined_count': 1651, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000070 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:07.918394
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 563 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 563, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000071 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:07.956088
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 677 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 677, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000072 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:12.788803
+message: Wykryto możliwy RTS/CTS Flood: 687 ramek RTS oraz 342 ramek CTS w oknie 5s.
+evidence: {'rts_count': 687, 'cts_count': 342, 'combined_count': 1029, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000073 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:12.954629
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 288 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 288, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000074 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:12.983866
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 368 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 368, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000075 | RTS_CTS_FLOOD_GLOBAL
+severity: HIGH
+time: 2026-05-16T19:12:17.790304
+message: Wykryto możliwy RTS/CTS Flood: 151 ramek RTS oraz 137 ramek CTS w oknie 5s.
+evidence: {'rts_count': 151, 'cts_count': 137, 'combined_count': 288, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 4, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92', '54:35:30:cf:ee:1e'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92', '54:35:30:cf:ee:1e']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000076 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:12:18.049664
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 79 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 79, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000077 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:12:18.053624
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 63 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 63, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 50.0s
+--------------------------------------------------------------------------------
+total frames: 30211
+
+by frame type:
+  control: 21516
+  management: 6879
+  data: 1816
+
+by frame subtype:
+  rts: 8010
+  block_ack: 7154
+  probe_request: 5121
+  cts: 3906
+  ack: 2409
+  beacon: 1572
+  qos_null: 917
+  null_data: 613
+  data: 233
+  probe_response: 124
+  qos_data: 53
+  action: 38
+  block_ack_request: 35
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  ps_poll: 1
+  cf_end: 1
+  reassociation_response: 1
+
+unique SSIDs: 20
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000078 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:22.797616
+message: Wykryto możliwy RTS/CTS Flood: 452 ramek RTS oraz 415 ramek CTS w oknie 5s.
+evidence: {'rts_count': 452, 'cts_count': 415, 'combined_count': 867, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['76:d9:b6:fc:28:ac', 'e0:3e:44:04:28:ac', 'd8:d7:75:45:81:24', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000079 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:23.126344
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 281 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 281, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000080 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:23.129407
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 196 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 196, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000081 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:12:26.846752
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000082 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:27.802591
+message: Wykryto możliwy RTS/CTS Flood: 1020 ramek RTS oraz 777 ramek CTS w oknie 5s.
+evidence: {'rts_count': 1020, 'cts_count': 777, 'combined_count': 1797, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 60.0s
+--------------------------------------------------------------------------------
+total frames: 34189
+
+by frame type:
+  control: 25361
+  management: 6952
+  data: 1876
+
+by frame subtype:
+  rts: 9404
+  block_ack: 8461
+  probe_request: 5123
+  cts: 4988
+  ack: 2471
+  beacon: 1634
+  qos_null: 940
+  null_data: 642
+  data: 241
+  probe_response: 131
+  qos_data: 53
+  action: 40
+  block_ack_request: 35
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  ps_poll: 1
+  cf_end: 1
+  reassociation_response: 1
+
+unique SSIDs: 20
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000083 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:28.132615
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 602 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 602, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000084 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:28.145128
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 344 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 344, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000085 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:32.806935
+message: Wykryto możliwy RTS/CTS Flood: 922 ramek RTS oraz 367 ramek CTS w oknie 5s.
+evidence: {'rts_count': 922, 'cts_count': 367, 'combined_count': 1289, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000086 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:33.132803
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 463 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 463, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000087 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:33.262100
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 316 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 316, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000088 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:37.807842
+message: Wykryto możliwy RTS/CTS Flood: 464 ramek RTS oraz 348 ramek CTS w oknie 5s.
+evidence: {'rts_count': 464, 'cts_count': 348, 'combined_count': 812, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000089 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:38.137146
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 340 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 340, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000090 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:38.270674
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 209 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 209, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000091 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:42.845280
+message: Wykryto możliwy RTS/CTS Flood: 1290 ramek RTS oraz 518 ramek CTS w oknie 5s.
+evidence: {'rts_count': 1290, 'cts_count': 518, 'combined_count': 1808, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000092 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:43.195220
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 772 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 772, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000093 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:43.333012
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 443 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 443, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 70.1s
+--------------------------------------------------------------------------------
+total frames: 41428
+
+by frame type:
+  control: 32384
+  management: 7096
+  data: 1948
+
+by frame subtype:
+  rts: 12404
+  block_ack: 10828
+  cts: 6563
+  probe_request: 5125
+  ack: 2552
+  beacon: 1768
+  qos_null: 970
+  null_data: 678
+  data: 245
+  probe_response: 138
+  qos_data: 55
+  action: 41
+  block_ack_request: 35
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  ps_poll: 1
+  cf_end: 1
+  reassociation_response: 1
+
+unique SSIDs: 21
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000094 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:47.845317
+message: Wykryto możliwy RTS/CTS Flood: 485 ramek RTS oraz 459 ramek CTS w oknie 5s.
+evidence: {'rts_count': 485, 'cts_count': 459, 'combined_count': 944, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000095 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:48.537090
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 214 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 214, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000096 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:48.537620
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 297 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 297, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000097 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:52.847631
+message: Wykryto możliwy RTS/CTS Flood: 331 ramek RTS oraz 304 ramek CTS w oknie 5s.
+evidence: {'rts_count': 331, 'cts_count': 304, 'combined_count': 635, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000098 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:53.607275
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 152 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 152, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000099 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:12:53.610157
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 117 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 117, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000100 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:12:56.864109
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000101 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:12:57.848106
+message: Wykryto możliwy RTS/CTS Flood: 573 ramek RTS oraz 301 ramek CTS w oknie 5s.
+evidence: {'rts_count': 573, 'cts_count': 301, 'combined_count': 874, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 4, 'unique_destination_count': 5, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92', '54:35:30:cf:ee:1e'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000102 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:12:58.613855
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 508 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 508, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000103 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:12:58.959889
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 78 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 78, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 80.1s
+--------------------------------------------------------------------------------
+total frames: 46463
+
+by frame type:
+  control: 37127
+  management: 7245
+  data: 2091
+
+by frame subtype:
+  rts: 14170
+  block_ack: 12605
+  cts: 7628
+  probe_request: 5130
+  ack: 2686
+  beacon: 1898
+  qos_null: 1029
+  null_data: 746
+  data: 255
+  probe_response: 152
+  qos_data: 61
+  action: 41
+  block_ack_request: 35
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  cf_end: 2
+  ps_poll: 1
+  reassociation_response: 1
+
+unique SSIDs: 21
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000104 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:02.872222
+message: Wykryto możliwy RTS/CTS Flood: 728 ramek RTS oraz 327 ramek CTS w oknie 5s.
+evidence: {'rts_count': 728, 'cts_count': 327, 'combined_count': 1055, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000105 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:03.615963
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 470 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 470, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000106 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:03.963794
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 188 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 188, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000107 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:07.876951
+message: Wykryto możliwy RTS/CTS Flood: 1055 ramek RTS oraz 590 ramek CTS w oknie 5s.
+evidence: {'rts_count': 1055, 'cts_count': 590, 'combined_count': 1645, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 5, 'sample_sources': ['50:02:91:e8:18:ec', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '50:02:91:e8:18:ec', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000108 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:08.627666
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 631 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 631, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000109 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:08.967442
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 413 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 413, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000110 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:12.877979
+message: Wykryto możliwy RTS/CTS Flood: 926 ramek RTS oraz 632 ramek CTS w oknie 5s.
+evidence: {'rts_count': 926, 'cts_count': 632, 'combined_count': 1558, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000111 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:13.648939
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 542 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 542, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000112 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:13.978404
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 257 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 257, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000113 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:17.927260
+message: Wykryto możliwy RTS/CTS Flood: 1117 ramek RTS oraz 510 ramek CTS w oknie 5s.
+evidence: {'rts_count': 1117, 'cts_count': 510, 'combined_count': 1627, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 90.1s
+--------------------------------------------------------------------------------
+total frames: 54213
+
+by frame type:
+  control: 44660
+  management: 7382
+  data: 2171
+
+by frame subtype:
+  rts: 17386
+  block_ack: 15020
+  cts: 9462
+  probe_request: 5130
+  ack: 2754
+  beacon: 2026
+  qos_null: 1067
+  null_data: 780
+  data: 262
+  probe_response: 161
+  qos_data: 62
+  action: 41
+  block_ack_request: 35
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  cf_end: 2
+  ps_poll: 1
+  reassociation_response: 1
+
+unique SSIDs: 21
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000114 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:18.649312
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 776 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 776, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000115 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:19.077259
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 345 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 345, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000116 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:22.929870
+message: Wykryto możliwy RTS/CTS Flood: 652 ramek RTS oraz 544 ramek CTS w oknie 5s.
+evidence: {'rts_count': 652, 'cts_count': 544, 'combined_count': 1196, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000117 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:23.727977
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 444 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 444, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000118 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:24.111447
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 217 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 217, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 100.1s
+--------------------------------------------------------------------------------
+total frames: 57216
+
+by frame type:
+  control: 47523
+  management: 7461
+  data: 2232
+
+by frame subtype:
+  rts: 18443
+  block_ack: 15930
+  cts: 10290
+  probe_request: 5132
+  ack: 2821
+  beacon: 2097
+  qos_null: 1092
+  null_data: 808
+  data: 269
+  probe_response: 162
+  qos_data: 63
+  action: 46
+  block_ack_request: 36
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  cf_end: 2
+  ps_poll: 1
+  reassociation_response: 1
+
+unique SSIDs: 21
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000119 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:13:27.585269
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000120 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:27.952443
+message: Wykryto możliwy RTS/CTS Flood: 649 ramek RTS oraz 428 ramek CTS w oknie 5s.
+evidence: {'rts_count': 649, 'cts_count': 428, 'combined_count': 1077, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 4, 'unique_destination_count': 5, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000121 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:28.737282
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 527 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 527, 'unique_destination_count': 3, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000122 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:13:29.136608
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 102 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 102, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 110.1s
+--------------------------------------------------------------------------------
+total frames: 59668
+
+by frame type:
+  control: 49914
+  management: 7504
+  data: 2250
+
+by frame subtype:
+  rts: 19415
+  block_ack: 16897
+  cts: 10722
+  probe_request: 5132
+  ack: 2841
+  beacon: 2140
+  qos_null: 1096
+  null_data: 818
+  data: 272
+  probe_response: 162
+  qos_data: 64
+  action: 46
+  block_ack_request: 36
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  cf_end: 2
+  ps_poll: 1
+  reassociation_response: 1
+
+unique SSIDs: 21
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000123 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:32.974416
+message: Wykryto możliwy RTS/CTS Flood: 909 ramek RTS oraz 458 ramek CTS w oknie 5s.
+evidence: {'rts_count': 909, 'cts_count': 458, 'combined_count': 1367, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000124 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:13:33.329549
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 132 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 132, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000125 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:33.844974
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 503 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 503, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000126 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:13:34.163460
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 103 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 103, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 120.1s
+--------------------------------------------------------------------------------
+total frames: 60750
+
+by frame type:
+  control: 50903
+  management: 7540
+  data: 2307
+
+by frame subtype:
+  rts: 19748
+  block_ack: 17196
+  cts: 11025
+  probe_request: 5132
+  ack: 2895
+  beacon: 2176
+  qos_null: 1138
+  null_data: 831
+  data: 273
+  probe_response: 162
+  qos_data: 65
+  action: 46
+  block_ack_request: 36
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  cf_end: 2
+  ps_poll: 1
+  reassociation_response: 1
+
+unique SSIDs: 21
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000127 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:37.977159
+message: Wykryto możliwy RTS/CTS Flood: 617 ramek RTS oraz 294 ramek CTS w oknie 5s.
+evidence: {'rts_count': 617, 'cts_count': 294, 'combined_count': 911, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 4, 'unique_destination_count': 4, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000128 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:38.851232
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 589 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 589, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000129 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:39.183585
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 343 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 343, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000130 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:42.977504
+message: Wykryto możliwy RTS/CTS Flood: 968 ramek RTS oraz 505 ramek CTS w oknie 5s.
+evidence: {'rts_count': 968, 'cts_count': 505, 'combined_count': 1473, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 3, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92'], 'sample_destinations': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000131 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:43.858426
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 509 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 509, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000132 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:44.226987
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 199 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 199, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000133 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:47.985642
+message: Wykryto możliwy RTS/CTS Flood: 787 ramek RTS oraz 728 ramek CTS w oknie 5s.
+evidence: {'rts_count': 787, 'cts_count': 728, 'combined_count': 1515, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 3, 'unique_destination_count': 4, 'sample_sources': ['50:02:91:e8:18:ec', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['50:02:91:e8:18:ec', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000134 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:48.874481
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 644 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 644, 'unique_destination_count': 2, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['76:d9:b6:fc:28:ac', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000135 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:49.238983
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 237 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 237, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 130.1s
+--------------------------------------------------------------------------------
+total frames: 67853
+
+by frame type:
+  control: 57722
+  management: 7659
+  data: 2472
+
+by frame subtype:
+  rts: 22443
+  block_ack: 19348
+  cts: 12855
+  probe_request: 5132
+  ack: 3037
+  beacon: 2293
+  qos_null: 1198
+  null_data: 856
+  data: 300
+  probe_response: 164
+  qos_data: 118
+  action: 46
+  block_ack_request: 36
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  cf_end: 2
+  ps_poll: 1
+  reassociation_response: 1
+
+unique SSIDs: 21
+unique BSSIDs: 13
+================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000136 | RTS_CTS_FLOOD_GLOBAL
+severity: CRITICAL
+time: 2026-05-16T19:13:52.999850
+message: Wykryto możliwy RTS/CTS Flood: 586 ramek RTS oraz 537 ramek CTS w oknie 5s.
+evidence: {'rts_count': 586, 'cts_count': 537, 'combined_count': 1123, 'window_seconds': 5, 'rts_count_threshold': 100, 'cts_count_threshold': 100, 'combined_count_threshold': 150, 'triggered_reasons': ['high_rts_rate', 'high_cts_rate', 'high_combined_rts_cts_rate'], 'unique_source_count': 2, 'unique_destination_count': 5, 'sample_sources': ['d8:d7:75:45:81:24', '76:d9:b6:fc:28:ac'], 'sample_destinations': ['e6:12:a8:93:5a:78', 'd8:d7:75:45:81:24', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000137 | RTS_FLOOD_SOURCE
+severity: CRITICAL
+time: 2026-05-16T19:13:53.880294
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 289 ramek RTS z adresu d8:d7:75:45:81:24 w oknie 5s.
+evidence: {'source_mac': 'd8:d7:75:45:81:24', 'rts_count': 289, 'unique_destination_count': 4, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['e6:12:a8:93:5a:78', '76:d9:b6:fc:28:ac', '54:35:30:cf:ee:1e', '36:0b:67:ef:6b:92']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000138 | RTS_FLOOD_SOURCE
+severity: HIGH
+time: 2026-05-16T19:13:54.243573
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 138 ramek RTS z adresu 76:d9:b6:fc:28:ac w oknie 5s.
+evidence: {'source_mac': '76:d9:b6:fc:28:ac', 'rts_count': 138, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ALERT] ALERT-000139 | RTS_FLOOD_SOURCE
+severity: MEDIUM
+time: 2026-05-16T19:13:57.043833
+message: Wykryto możliwy RTS Flood z pojedynczego źródła: 50 ramek RTS z adresu 36:0b:67:ef:6b:92 w oknie 5s.
+evidence: {'source_mac': '36:0b:67:ef:6b:92', 'rts_count': 50, 'unique_destination_count': 1, 'rts_per_source_threshold': 50, 'window_seconds': 5, 'sample_destinations': ['d8:d7:75:45:81:24']}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+STATISTICS after 132.8s
+--------------------------------------------------------------------------------
+total frames: 70386
+
+by frame type:
+  control: 60167
+  management: 7708
+  data: 2511
+
+by frame subtype:
+  rts: 23393
+  block_ack: 20196
+  cts: 13457
+  probe_request: 5132
+  ack: 3082
+  beacon: 2340
+  qos_null: 1215
+  null_data: 867
+  data: 310
+  probe_response: 166
+  qos_data: 119
+  action: 46
+  block_ack_request: 36
+  deauthentication: 17
+  authentication: 4
+  reassociation_request: 2
+  cf_end: 2
+  ps_poll: 1
+  reassociation_response: 1
+
+unique SSIDs: 21
+unique BSSIDs: 13
+================================================================================
+
+================================================================================
+DETECTION SUMMARY
+--------------------------------------------------------------------------------
+total alerts: 139
+
+by attack type:
+  RTS_FLOOD_SOURCE: 84
+  RTS_CTS_FLOOD_GLOBAL: 42
+  PROBE_FLOOD_GLOBAL: 7
+  PROBE_FLOOD_SOURCE: 6
+
+by severity:
+  CRITICAL: 86
+  MEDIUM: 41
+  HIGH: 12
+================================================================================
